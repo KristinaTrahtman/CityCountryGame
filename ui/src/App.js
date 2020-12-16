@@ -12,9 +12,7 @@ function App() {
     <div className="App">
       <Timer />
       <GameTitle />
-<Country/>
-    {/*<Greet /> */} 
-  
+      <Country/> 
 
     </div>
   );  
