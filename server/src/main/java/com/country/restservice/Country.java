@@ -1,20 +1,31 @@
 package com.country.restservice;
+import java.util.Locale;
 
 public class Country {
+	//public static void main(String[] args) {
 
-	private final long id;
-	private final String country;
 
-	public Country(long id, String country) {
-		this.id = id;
-		this.country = country;
+     public Country() {
+
 	}
-
 	public long getId() {
-		return id;
+		return 0;
 	}
 
 	public String getContent() {
-		return country;
+		String[] locales = Locale.getISOCountries();
+
+		for (String countryCode : locales) {
+
+			Locale obj = new Locale("", countryCode);
+
+			System.out.println("Country = " + obj.getDisplayCountry());
+		}
+		return (new Locale("", locales[90])).getDisplayCountry();
 	}
+
+
+
 }
+//}
+//}

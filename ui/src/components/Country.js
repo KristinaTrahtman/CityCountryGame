@@ -3,7 +3,7 @@ import { useFormik } from 'formik'
 import axios from 'axios'
 
 function Country(){
-      const SUBMIT_REST_API_URL = 'http://localhost:8080/greeting'
+      const SUBMIT_REST_API_URL = 'http://localhost:8080/submission'
       const formik = useFormik({
             initialValues: {
                   country: ''
