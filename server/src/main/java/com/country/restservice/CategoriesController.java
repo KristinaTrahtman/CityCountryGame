@@ -2,6 +2,7 @@ package com.country.restservice;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,8 +16,9 @@ public class CategoriesController {
 	//private final AtomicLong counter = new AtomicLong();
 
 	@GetMapping("/submission")
-	public Country submission(@RequestParam(value = "Country: ", defaultValue = "World") String name) {
-		 Country country = new Country();
+	public Country submission(@RequestParam(value = "country_name", defaultValue = "World") String country_name) {
+		Country country = new Country(country_name);
+
 		return (country);
 	}
 }

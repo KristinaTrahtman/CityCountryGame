@@ -10,7 +10,8 @@ function Country(){
             },
             onSubmit: values => {
                   console.log('Form data', values)
-                  axios.get(SUBMIT_REST_API_URL + "?name=" +formik.values.country).then((response) => {
+                  axios.get(SUBMIT_REST_API_URL + "?country_name=" +formik.values.country).then((response) => {
+                      
                         console.log('Response', response.data.content)
                   });
             }
