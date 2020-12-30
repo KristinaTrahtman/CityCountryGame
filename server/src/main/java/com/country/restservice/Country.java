@@ -18,19 +18,16 @@ public class Country {
 
 	public String getContent() {
 		String[] locales = Locale.getISOCountries();
-
+		System.out.println("Country Name = " + country_name);
 		for (String countryCode : locales ) {
 
 			Locale obj = new Locale("", countryCode);
 
-			System.out.println("Country = " + obj.getDisplayCountry());
-			System.out.println("Country Code = " + countryCode);
-			System.out.println("Country Name = " + country_name);
-
+//			System.out.println("Country = " + obj.getDisplayCountry());
 
 			if (country_name.equalsIgnoreCase(obj.getDisplayCountry())){
 
-				System.out.println("Country Name = " + country_name);
+//				System.out.println("Country Name = " + country_name);
 
 				return "True";
 			}
