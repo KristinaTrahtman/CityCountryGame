@@ -29,6 +29,7 @@ const api = axios.create({
       const formik = useFormik({
             initialValues: {
             country: '',
+            city: '', 
             success: 'false'
             },
             onSubmit: values => {
@@ -44,10 +45,15 @@ const api = axios.create({
       return (
       <div className="login-box">
             <form onSubmit={formik.handleSubmit}>
-                  <label htmlFor = 'country'>Country</label>
+                  <label htmlFor = 'country'>Country<br/>
                   <input type= 'text' id='country' country='country' onChange={formik.handleChange} value={formik.values.country}/>
-                  <input type="submit" value="Submit"/>
                   {formik.errors.country ? <div>{formik.errors.country}</div>: null}
+                  </label>
+                  <label htmlFor = 'city'>City<br/>
+                  <input type= 'text' id='city' city='city' onChange={formik.handleChange} value={formik.values.city}/>
+                  </label>
+                  <input type="submit" value="Submit"/>
+                  {/* {formik.errors.country ? <div>{formik.errors.country}</div>: null} */}
             </form>
       </div>
       )
