@@ -13,7 +13,7 @@ function App() {
       <Timer />
       <GameTitle />
       <Country/> 
-
+  
     </div>
   );  
 }
