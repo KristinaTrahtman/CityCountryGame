@@ -10,18 +10,26 @@ const api = axios.create({
  function Country(){
        const validate = async(response) => {
             let errors ={} 
-            console.log('before validate', formik.values.success)
+            console.log('before validate Country:', formik.values.countrySuccess)
+            console.log('before validate Country:', formik.values.citySuccess)
             
-            await api.get('?country_name=' +  formik.values.country).then((response) => {
-                  formik.values.success = response.data.content
-                  console.log('Response',  response.data.content)
+            await api.get('?country_name='+formik.values.country + '&city_name='+formik.values.city).then((response) => {
+                  formik.values.countrySuccess = response.data.content.Country
+                  formik.values.citySuccess = response.data.content.City
+                  console.log('Response Country: ',  response.data.content.Country)
+                  console.log('Response City: ',  response.data.content.City)
             });
       
-            console.log('after api get', formik.values.success)
-            if(formik.values.success !== 'True'){
+           
+            if(formik.values.countrySuccess !== 'True'){
                   console.log('setting error')
-                  errors.country = 'No such country exists!'   
+                  errors.country = 'No such country exists!'    
             }
+            if(formik.values.citySuccess !== 'True'){
+                  console.log('setting error')
+                  errors.city = 'No such city exists!'    
+            }
+            
             console.log('not setting error')
             return errors
       }
@@ -30,7 +38,9 @@ const api = axios.create({
             initialValues: {
             country: '',
             city: '', 
-            success: 'false'
+            //success: 'false'
+            citySuccess: 'false',
+            countrySuccess: 'false'
             },
             onSubmit: values => {
                   console.log('Submitting!')
@@ -51,9 +61,9 @@ const api = axios.create({
                   </label>
                   <label htmlFor = 'city'>City<br/>
                   <input type= 'text' id='city' city='city' onChange={formik.handleChange} value={formik.values.city}/>
+                  {formik.errors.city ? <div>{formik.errors.city}</div>: null}
                   </label>
                   <input type="submit" value="Submit"/>
-                  {/* {formik.errors.country ? <div>{formik.errors.country}</div>: null} */}
             </form>
       </div>
       )

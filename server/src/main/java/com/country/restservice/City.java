@@ -17,6 +17,7 @@ public class City {
 
     public String validate() {
         JSONParser parser = new JSONParser();
+        System.out.println("City Name = " + city_name);
         try {
             JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/world-cities_json.json"));
 
