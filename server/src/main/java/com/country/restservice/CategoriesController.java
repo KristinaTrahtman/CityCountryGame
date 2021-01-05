@@ -16,9 +16,13 @@ public class CategoriesController {
 	//private final AtomicLong counter = new AtomicLong();
 
 	@GetMapping("/submission")
-	public Country submission(@RequestParam(value = "country_name", defaultValue = "") String country_name) {
+	public Submission submission(
+			@RequestParam(value = "country_name", defaultValue = "") String country_name,
+			@RequestParam(value = "city_name", defaultValue = "") String city_name) {
 		Country country = new Country(country_name);
-
-		return (country);
+		City city = new City(city_name);
+		Submission response = new Submission(country,city);
+		return (response);
+		//return (country);
 	}
 }
