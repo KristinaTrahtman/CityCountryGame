@@ -18,14 +18,13 @@ public class City {
     public String validate() {
         JSONParser parser = new JSONParser();
         try {
-            Object obj = parser.parse(new FileReader("src/main/java/com/country/restservice/world-cities_json.json"));
+            JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/world-cities_json.json"));
 
-            JSONArray jsonObject = (JSONArray) obj;
-
-            Iterator<JSONObject> iterator = jsonObject.iterator();
+            Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
-                System.out.println(iterator.next().get("name"));
-
+                if (city_name.equalsIgnoreCase((String) iterator.next().get("name"))){
+                    return "True";
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
