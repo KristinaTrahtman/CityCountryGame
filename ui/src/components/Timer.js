@@ -2,12 +2,12 @@ import React,{ Component } from 'react'
 class Timer extends React.Component {
       constructor(props) {
         super(props);
-        this.state = { seconds: 0 };
+        this.state = { seconds: 30 };
       }
     
       tick() {
         this.setState(state => ({
-          seconds: state.seconds + 1
+          seconds: state.seconds -1
         }));
       }
     
