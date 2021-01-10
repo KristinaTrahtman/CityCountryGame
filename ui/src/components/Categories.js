@@ -7,7 +7,7 @@ const api = axios.create({
       baseURL: 'http://localhost:8080/submission'
 })
 
- function Country(){
+ function Categories(){
        const validate = async(response) => {
             let errors ={} 
             console.log('before validate Country:', formik.values.countrySuccess)
@@ -69,4 +69,4 @@ const api = axios.create({
       )
 }
 
-export default Country
+export default Categories

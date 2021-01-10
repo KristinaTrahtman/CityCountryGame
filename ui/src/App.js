@@ -1,21 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import Greet from './components/Greet'
 import GameTitle from './components/GameTitle'
-import Country from './components/Country'
-import Timer from './components/Timer'
 import GenerateRandomLetter from './components/GenerateRandomLetter'
-// import Message from './components/Message'
+import Categories from './components/Categories';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Timer />
-      <GenerateRandomLetter/>
       <GameTitle />
-      <Country/> 
-  
+      <GenerateRandomLetter/>
+      <Categories/> 
     </div>
   );  
 }
