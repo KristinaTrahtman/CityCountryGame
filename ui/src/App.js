@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <GameTitle />
       <GenerateRandomLetter/>
-      <Categories/> 
+      {/* <Categories/>  */}
     </div>
   );  
 }

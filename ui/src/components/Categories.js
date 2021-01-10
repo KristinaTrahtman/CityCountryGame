@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
+import React, { useContext } from 'react'
 import { useFormik } from 'formik'
+import { LetterContext}  from  './GenerateRandomLetter'
 import axios from 'axios'
+
+
 
 
 const api = axios.create({
@@ -8,16 +11,19 @@ const api = axios.create({
 })
 
  function Categories(){
+      const letterContext = useContext(LetterContext)
        const validate = async(response) => {
             let errors ={} 
             console.log('before validate Country:', formik.values.countrySuccess)
             console.log('before validate Country:', formik.values.citySuccess)
-            
+            console.log('Letter in Categories is : ',  letterContext)
+
             await api.get('?country_name='+formik.values.country + '&city_name='+formik.values.city).then((response) => {
                   formik.values.countrySuccess = response.data.content.Country
                   formik.values.citySuccess = response.data.content.City
                   console.log('Response Country: ',  response.data.content.Country)
                   console.log('Response City: ',  response.data.content.City)
+                  
             });
       
            
@@ -28,6 +34,10 @@ const api = axios.create({
             if(formik.values.citySuccess !== 'True'){
                   console.log('setting error')
                   errors.city = 'No such city exists!'    
+            }
+            if(letterContext.toLowerCase() !==   formik.values.citySuccess){
+                  console.log('letter error')
+                  errors.city = 'Wrong Letter, please be cuation!'  
             }
             
             console.log('not setting error')
