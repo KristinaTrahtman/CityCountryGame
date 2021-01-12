@@ -13,7 +13,6 @@ function GenerateRandomLetter() {
         console.log('Validating!')
         console.log('value of alphabet is: ' + formik.values.alphabet)
         formik.values.reset = formik.values.reset ? false : true
-        formik.values.start = true
         console.log('Reset ' + formik.values.reset)
       }
 
@@ -23,13 +22,14 @@ function GenerateRandomLetter() {
         reset: false,
         start: false
         },
-        onSubmit: values => {
+        onSubmit: async(values) => {
+          formik.values.start = true
           console.log('Submitting Letter!')   
         },
         validateOnChange: false,
         validateOnBlur: false,
         validate
-        })
+      })
 
     return (
       <div className="login-box">
