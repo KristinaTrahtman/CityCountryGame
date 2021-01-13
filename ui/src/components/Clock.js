@@ -1,29 +1,35 @@
 import React, { useContext } from 'react'
 import { useState, useEffect } from 'react';
 import { ResetContext } from './GenerateRandomLetter'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+
+function reloadPage(){ 
+    window.location.reload(false);
+}
 
 const Clock = (props) => {
 
     const resetContext = useContext(ResetContext)
-    const {initialMinute = 0,initialSeconds = 0} = props;
-    const [ minutes, setMinutes ] = useState(initialMinute);
+    const {initialSeconds = 0} = props;
     const [seconds, setSeconds ] =  useState(initialSeconds);
     const [reset, setReset ] =  useState(false);
+    const [clockStarted, setClockStarted ] =  useState(false);
 
     useEffect(()=>{
-    let myInterval = setInterval(() => {
-            if (seconds > 0) {
+        let myInterval = setInterval(() => {
+            if (seconds > 0) {              
                 setSeconds(seconds - 1);
+                setClockStarted(true)
             }
             if (seconds === 0) {
-                if (minutes === 0) {
-                    clearInterval(myInterval)
-                } else {
-                    setMinutes(minutes - 1);
-                    setSeconds(59);
+                if(clockStarted){
+                    reloadPage()
+                    alert('Time ran out!!!!')
                 }
+                clearInterval(myInterval)
             }
-            if(reset !== resetContext){
+            if(reset !== resetContext){                
                 setReset(resetContext) 
                 setSeconds(initialSeconds)
             } 
@@ -35,9 +41,9 @@ const Clock = (props) => {
 
     return (
         <div>
-        { minutes === 0 && seconds === 0
-            ? null
-            : <h1> {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</h1> 
+        { seconds === 0
+            ?  null
+            : <h1>time left: 00:{seconds < 10 ?  `0${seconds}` : seconds}</h1> 
         }
         </div>
     )
