@@ -19,12 +19,14 @@ public class CategoriesController {
 	public Submission submission(
 			@RequestParam(value = "country_name", defaultValue = "") String country_name,
 			@RequestParam(value = "city_name", defaultValue = "") String city_name,
-			@RequestParam(value = "animal_name", defaultValue = "") String animal_name) {
+			@RequestParam(value = "animal_name", defaultValue = "") String animal_name,
+			@RequestParam(value = "plant_name", defaultValue = "") String plant_name) {
 
 		Country country = new Country(country_name);
 		City city = new City(city_name);
 		Animal animal = new Animal(animal_name);
-		Submission response = new Submission(country,city,animal);
+		Plant plant = new Plant(plant_name);
+		Submission response = new Submission(country,city,animal,plant);
 		return (response);
 	}
 }

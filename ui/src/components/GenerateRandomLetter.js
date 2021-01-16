@@ -34,7 +34,7 @@ function GenerateRandomLetter() {
     return (
       <div className="login-box">
         <ResetContext.Provider value={formik.values.reset}>
-          <Clock initialSeconds={formik.values.start ? 30 : 0}/>
+          <Clock initialSeconds={formik.values.start ? 59 : 0}/>
         </ResetContext.Provider>
         <form onSubmit={formik.handleSubmit}>
           <label htmlFor = 'Start'>{'Your Letter is: ' + formik.values.alphabet}<br/>

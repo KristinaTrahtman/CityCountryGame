@@ -7,23 +7,23 @@ import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
 import java.util.Iterator;
 
-public class City {
-    private final String city_name;
+public class Plant {
+    private final String plant_name;
 
-    public City(String city_name) {
-        this.city_name = city_name;
+    public Plant(String city_name) {
+        this.plant_name = city_name;
     }
 
 
     public String validate() {
         JSONParser parser = new JSONParser();
-        System.out.println("City Name = " + city_name);
+        System.out.println("Plant_name:  = " + plant_name);
         try {
-            JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/world-cities_json.json"));
+            JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/plants.json"));
 
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
-                if (city_name.equalsIgnoreCase((String) iterator.next().get("name"))){
+                if (plant_name.equalsIgnoreCase((String) iterator.next().get("name"))){
 
                     return "True";
                 }

@@ -20,6 +20,7 @@ function reloadPage(){
             console.log('before validate Country:', formik.values.countrySuccess)
             console.log('before validate city:', formik.values.citySuccess)
             console.log('before validate animal:', formik.values.animalSuccess)
+            console.log('before validate plant:', formik.values.plantSuccess)
             console.log('Letter in Categories is : ',  letterContext)
 
             console.log('letterContext.toLowerCase() : ',  letterContext.toLowerCase())
@@ -44,6 +45,11 @@ function reloadPage(){
                   errors.animal = 'Wrong Letter, please be cuation!' 
                   letterFail = true
             } 
+            if(letterContext.toLowerCase() !==   formik.values.plant.charAt(0).toLowerCase()){ 
+                  console.log('letter error plant')
+                  errors.plant = 'Wrong Letter, please be cuation!' 
+                  letterFail = true
+            } 
 
 
             if(letterFail){
@@ -51,13 +57,16 @@ function reloadPage(){
                   return errors
             } 
 
-            await api.get('?country_name='+formik.values.country + '&city_name='+formik.values.city +'&animal_name='+formik.values.animal).then((response) => {
+            await api.get('?country_name='+formik.values.country + '&city_name='+formik.values.city + '&animal_name='+formik.values.animal + '&plant_name='+formik.values.plant).then((response) => {
                   formik.values.countrySuccess = response.data.content.Country
                   formik.values.citySuccess = response.data.content.City
                   formik.values.animalSuccess = response.data.content.Animal
+                  formik.values.plantSuccess = response.data.content.Plant
                   console.log('Response Country: ',  response.data.content.Country)
                   console.log('Response City: ',  response.data.content.City) 
-                  console.log('Response Animal: ',  response.data.content.Animal)                 
+                  console.log('Response Animal: ',  response.data.content.Animal)  
+                  console.log('Response Animal: ',  response.data.content.Plant)
+
             });
       
            
@@ -75,6 +84,10 @@ function reloadPage(){
                   console.log('setting error')
                   errors.animal = 'No such Animal exists!'    
             }
+            if(formik.values.plantSuccess !== 'True'){
+                  console.log('setting error')
+                  errors.plant = 'No such Plant exists!'    
+            }
 
             if(Object.entries(errors).length === 0){
                   alert('Wow you are Amazing!!!!');
@@ -88,10 +101,12 @@ function reloadPage(){
             country: '',
             city: '', 
             animal: '',
+            plant: '',
          
             citySuccess: 'false',
             countrySuccess: 'false',
-            animalSuccess: 'false'
+            animalSuccess: 'false',
+            plantSuccess: 'false'
             },
             onSubmit: values => {
                   console.log('Submitting!')
@@ -117,6 +132,10 @@ function reloadPage(){
                   <label htmlFor = 'animal'>Animal<br/>
                   <input type= 'text' id='animal' animal='animal' onChange={formik.handleChange} value={formik.values.animal}/>
                   {formik.errors.animal ? <div>{formik.errors.animal}</div>: null}
+                  </label>
+                  <label htmlFor = 'plant'>Plant<br/>
+                  <input type= 'text' id='plant' plant='plant' onChange={formik.handleChange} value={formik.values.plant}/>
+                  {formik.errors.plant ? <div>{formik.errors.plant}</div>: null}
                   </label>
                   <input type="submit" value="Submit"/>
             </form>
