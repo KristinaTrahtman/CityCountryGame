@@ -3,18 +3,15 @@ import { useFormik } from 'formik'
 import Clock from './Clock'
 import Categories from './Categories';
 
+
+
+
 export const ResetContext = React.createContext()
 export const LetterContext = React.createContext()
 
 function GenerateRandomLetter() {
+  //No X letter - there are no countries or animals that start with that letter. 
       const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWYZ"
-      const validate = async(response) => {
-        formik.values.alphabet = alphabet[Math.floor(Math.random() * alphabet.length)]
-        console.log('Validating!')
-        console.log('value of alphabet is: ' + formik.values.alphabet)
-        formik.values.reset = formik.values.reset ? false : true
-        console.log('Reset ' + formik.values.reset)
-      }
 
       const formik = useFormik({
         initialValues: {
@@ -23,12 +20,10 @@ function GenerateRandomLetter() {
         start: false
         },
         onSubmit: async(values) => {
-          formik.values.start = true
-          console.log('Submitting Letter!')   
-        },
-        validateOnChange: false,
-        validateOnBlur: false,
-        validate
+          formik.values.alphabet = alphabet[Math.floor(Math.random() * alphabet.length)]
+          formik.values.reset = formik.values.reset ? false : true 
+          formik.values.start = true 
+        }
       })
 
     return (
@@ -51,5 +46,3 @@ function GenerateRandomLetter() {
   )
  }
 export default GenerateRandomLetter
-
-  

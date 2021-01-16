@@ -14,16 +14,14 @@ public class City {
         this.city_name = city_name;
     }
 
-
     public String validate() {
         JSONParser parser = new JSONParser();
-        System.out.println("City Name = " + city_name);
         try {
             JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/world-cities_json.json"));
 
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
-                if (city_name.equalsIgnoreCase((String) iterator.next().get("name"))){
+                if (city_name.equalsIgnoreCase((String) iterator.next().get("name"))) {
 
                     return "True";
                 }
@@ -33,6 +31,5 @@ public class City {
         }
         return "False";
     }
-
 }
 

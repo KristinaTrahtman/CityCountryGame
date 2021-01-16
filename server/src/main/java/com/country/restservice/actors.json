@@ -161,6 +161,9 @@
     "objectID": "551486520"
   },
   {
+    "name": "Lily james"
+  },
+  {
     "name": "Rachel Weisz",
     "rating": 1156,
     "image_path": "/4DMvR5get0liIs7Bi3uTRIIdLkw.jpg",
@@ -713,6 +716,11 @@
     "alternative_name": null,
     "objectID": "551487310"
   },
+
+
+
+
+
   {
     "name": "Morgan Freeman",
     "rating": 748,
@@ -1274,7 +1282,7 @@
     "objectID": "551488130"
   },
   {
-    "name": "Jean-Claude Van Damme",
+    "name": "Jean Claude Van Damme",
     "rating": 643,
     "image_path": "/aqZ9RjL5j44HMlBMvTaawhHiGOH.jpg",
     "alternative_name": null,
@@ -1792,6 +1800,10 @@
     "objectID": "551488860"
   },
   {
+    "name": "Queen Latifah"
+  },
+
+  {
     "name": "Mia Kirshner",
     "rating": 561,
     "image_path": "/pgQw5mlHRwWKBwLMdMj2jqiwK5D.jpg",
@@ -1910,6 +1922,10 @@
     "alternative_name": null,
     "objectID": "551489020"
   },
+  {
+    "name": "Ursula Andress"
+  },
+
   {
     "name": "Kaya Scodelario",
     "rating": 549,
@@ -2590,6 +2606,10 @@
     "objectID": "551489990"
   },
   {
+    "name": "Yolandi"
+  },
+
+  {
     "name": "Anne Bancroft",
     "rating": 503,
     "image_path": "/4VMhut6tvXqXBmMGFRjXbbImAZW.jpg",
@@ -2891,11 +2911,14 @@
     "objectID": "551490410"
   },
   {
-    "name": "Zooey Deschanel",
-    "rating": 486,
-    "image_path": "/suOjtxoG1qhAgzzWmRwuFltAVvq.jpg",
-    "alternative_name": null,
-    "objectID": "551490480"
+  "name": "Zooey Deschanel",
+  "rating": 486,
+  "image_path": "/suOjtxoG1qhAgzzWmRwuFltAVvq.jpg",
+  "alternative_name": null,
+  "objectID": "551490480"
+},
+  {
+    "name": "Zendaya"
   },
   {
     "name": "Bridget Fonda",
@@ -2994,6 +3017,9 @@
     "image_path": "/rA0aS2GACY2fwrc7mEJR3f5k5FD.jpg",
     "alternative_name": null,
     "objectID": "551490570"
+  },
+  {
+    "name": "Tom Holland"
   },
   {
     "name": "Dakota Fanning",
@@ -3386,6 +3412,9 @@
     "image_path": "/44AaIXkbZFkdhSW1kRdzCbfYk6c.jpg",
     "alternative_name": null,
     "objectID": "551491160"
+  },
+  {
+    "name": "elizabeth taylor"
   },
   {
     "name": "Ti Lung",

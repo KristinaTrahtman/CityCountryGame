@@ -11,13 +11,12 @@ public class Submission {
     Plant plant;
     Actor actor;
 
-    public Submission(Country country, City city, Animal animal, Plant plant,Actor actor) {
+    public Submission(Country country, City city, Animal animal, Plant plant, Actor actor) {
         this.country = country;
         this.city = city;
         this.animal = animal;
         this.plant = plant;
         this.actor = actor;
-
     }
 
     public long getId() {
@@ -34,7 +33,5 @@ public class Submission {
 
         return response;
     }
-
-
 }
 

@@ -14,17 +14,15 @@ public class Actor {
         this.actor_name = city_name;
     }
 
-
     public String validate() {
         JSONParser parser = new JSONParser();
-        System.out.println("Actor_name:  = " + actor_name);
+
         try {
             JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/actors.json"));
 
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
-                if (actor_name.equalsIgnoreCase((String) iterator.next().get("name"))){
-
+                if (actor_name.equalsIgnoreCase((String) iterator.next().get("name"))) {
                     return "True";
                 }
             }
@@ -33,7 +31,6 @@ public class Actor {
         }
         return "False";
     }
-
 }
 
 

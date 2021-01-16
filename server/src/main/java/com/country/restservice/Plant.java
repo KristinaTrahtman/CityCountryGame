@@ -14,17 +14,14 @@ public class Plant {
         this.plant_name = city_name;
     }
 
-
     public String validate() {
         JSONParser parser = new JSONParser();
-        System.out.println("Plant_name:  = " + plant_name);
         try {
             JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/plants.json"));
 
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {
-                if (plant_name.equalsIgnoreCase((String) iterator.next().get("name"))){
-
+                if (plant_name.equalsIgnoreCase((String) iterator.next().get("name"))) {
                     return "True";
                 }
             }
@@ -33,6 +30,5 @@ public class Plant {
         }
         return "False";
     }
-
 }
 
