@@ -9,12 +9,14 @@ public class Submission {
     City city;
     Animal animal;
     Plant plant;
+    Actor actor;
 
-    public Submission(Country country, City city, Animal animal, Plant plant) {
+    public Submission(Country country, City city, Animal animal, Plant plant,Actor actor) {
         this.country = country;
         this.city = city;
-        this.animal=animal;
-        this.plant=plant;
+        this.animal = animal;
+        this.plant = plant;
+        this.actor = actor;
 
     }
 
@@ -28,6 +30,7 @@ public class Submission {
         response.put("City", city.validate());
         response.put("Animal", animal.validate());
         response.put("Plant", plant.validate());
+        response.put("Actor", actor.validate());
 
         return response;
     }
