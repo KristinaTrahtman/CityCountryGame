@@ -1,3 +1,8 @@
-com/example/restservice/RestServiceApplication.class
-com/example/restservice/Greeting.class
-com/example/restservice/GreetingController.class
+com/country/restservice/Plant.class
+com/country/restservice/Submission.class
+com/country/restservice/City.class
+com/country/restservice/Animal.class
+com/country/restservice/Actor.class
+com/country/restservice/CategoriesController.class
+com/country/restservice/Country.class
+com/country/restservice/RestServiceApplication.class
