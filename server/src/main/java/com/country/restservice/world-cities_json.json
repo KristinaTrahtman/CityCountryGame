@@ -21,13 +21,13 @@
     "country": "United Arab Emirates",
     "geonameid": 291074,
     "name": "Ras al-Khaimah",
-    "subcountry": "Ra\u02bcs al Khaymah"
+    "subcountry": "Ras al Khaymah"
   },
   {
     "country": "United Arab Emirates",
     "geonameid": 291696,
-    "name": "Khawr Fakk\u0101n",
-    "subcountry": "Ash Sh\u0101riqah"
+    "name": "Khawr Fakkn",
+    "subcountry": "Ash Shriqah"
   },
   {
     "country": "United Arab Emirates",
@@ -51,7 +51,7 @@
     "country": "United Arab Emirates",
     "geonameid": 292672,
     "name": "Sharjah",
-    "subcountry": "Ash Sh\u0101riqah"
+    "subcountry": "Ash Shriqah"
   },
   {
     "country": "United Arab Emirates",
@@ -81,7 +81,7 @@
     "country": "United Arab Emirates",
     "geonameid": 292953,
     "name": "Adh Dhayd",
-    "subcountry": "Ash Sh\u0101riqah"
+    "subcountry": "Ash Shriqah"
   },
   {
     "country": "United Arab Emirates",
@@ -93,25 +93,25 @@
     "country": "Afghanistan",
     "geonameid": 1120985,
     "name": "Zaranj",
-    "subcountry": "N\u012bmr\u016bz"
+    "subcountry": "Nmrz"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1123004,
     "name": "Taloqan",
-    "subcountry": "Takh\u0101r"
+    "subcountry": "Takhr"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1125155,
-    "name": "Sh\u012bn\u1e0fan\u1e0f",
+    "name": "Shnan",
     "subcountry": "Herat"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1125444,
-    "name": "Shibirgh\u0101n",
-    "subcountry": "Jowzj\u0101n"
+    "name": "Shibirghn",
+    "subcountry": "Jowzjn"
   },
   {
     "country": "Afghanistan",
@@ -128,50 +128,50 @@
   {
     "country": "Afghanistan",
     "geonameid": 1127628,
-    "name": "Sang-e Ch\u0101rak",
+    "name": "Sang-e Chrak",
     "subcountry": "Sar-e Pol"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1127768,
-    "name": "A\u012bbak",
-    "subcountry": "Samang\u0101n"
+    "name": "Abak",
+    "subcountry": "Samangn"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1128265,
-    "name": "Rust\u0101q",
-    "subcountry": "Takh\u0101r"
+    "name": "Rustq",
+    "subcountry": "Takhr"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1129516,
-    "name": "Qarq\u012bn",
-    "subcountry": "Jowzj\u0101n"
+    "name": "Qarqn",
+    "subcountry": "Jowzjn"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1129648,
-    "name": "Qar\u0101wul",
+    "name": "Qarwul",
     "subcountry": "Kunduz"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1130490,
-    "name": "Pul-e Khumr\u012b",
-    "subcountry": "Wil\u0101yat-e Baghl\u0101n"
+    "name": "Pul e Khumr",
+    "subcountry": "Wilyat-e Baghln"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1131316,
-    "name": "Paghm\u0101n",
+    "name": "Paghmn",
     "subcountry": "Kabul"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1132495,
-    "name": "Nahr\u012bn",
-    "subcountry": "Wil\u0101yat-e Baghl\u0101n"
+    "name": "Nahrn",
+    "subcountry": "Wilyat-e Baghln"
   },
   {
     "country": "Afghanistan",
@@ -182,19 +182,19 @@
   {
     "country": "Afghanistan",
     "geonameid": 1133574,
-    "name": "Mehtar L\u0101m",
-    "subcountry": "Laghm\u0101n"
+    "name": "Mehtar Lm",
+    "subcountry": "Laghmn"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1133616,
-    "name": "Maz\u0101r-e Shar\u012bf",
+    "name": "Mazr-e Sharf",
     "subcountry": "Balkh"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1134720,
-    "name": "Lashkar G\u0101h",
+    "name": "Lashkar Gh",
     "subcountry": "Helmand"
   },
   {
@@ -212,7 +212,7 @@
   {
     "country": "Afghanistan",
     "geonameid": 1136469,
-    "name": "Kh\u014dst",
+    "name": "Khst",
     "subcountry": "Khowst"
   },
   {
@@ -224,8 +224,8 @@
   {
     "country": "Afghanistan",
     "geonameid": 1136863,
-    "name": "Kh\u0101sh",
-    "subcountry": "N\u012bmr\u016bz"
+    "name": "Khsh",
+    "subcountry": "Nmrz"
   },
   {
     "country": "Afghanistan",
@@ -242,8 +242,8 @@
   {
     "country": "Afghanistan",
     "geonameid": 1138336,
-    "name": "Kandah\u0101r",
-    "subcountry": "Kandah\u0101r"
+    "name": "Kandahr",
+    "subcountry": "Kandahr"
   },
   {
     "country": "Afghanistan",
@@ -254,19 +254,19 @@
   {
     "country": "Afghanistan",
     "geonameid": 1139715,
-    "name": "Jal\u0101l\u0101b\u0101d",
-    "subcountry": "Nangarh\u0101r"
+    "name": "Jallbd",
+    "subcountry": "Nangarhr"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1139807,
     "name": "Jabal os Saraj",
-    "subcountry": "Parv\u0101n"
+    "subcountry": "Parvn"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1140026,
-    "name": "Her\u0101t",
+    "name": "Hert",
     "subcountry": "Herat"
   },
   {
@@ -279,7 +279,7 @@
     "country": "Afghanistan",
     "geonameid": 1141269,
     "name": "Ghazni",
-    "subcountry": "Ghazn\u012b"
+    "subcountry": "Ghazn"
   },
   {
     "country": "Afghanistan",
@@ -290,7 +290,7 @@
   {
     "country": "Afghanistan",
     "geonameid": 1141857,
-    "name": "Gard\u0113z",
+    "name": "Gardz",
     "subcountry": "Paktia"
   },
   {
@@ -315,19 +315,19 @@
     "country": "Afghanistan",
     "geonameid": 1145352,
     "name": "Charikar",
-    "subcountry": "Parv\u0101n"
+    "subcountry": "Parvn"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1147066,
-    "name": "Barak\u012b Barak",
+    "name": "Barak Barak",
     "subcountry": "Lowgar"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1147242,
-    "name": "B\u0101my\u0101n",
-    "subcountry": "B\u0101m\u012b\u0101n"
+    "name": "Bmyn",
+    "subcountry": "Bmn"
   },
   {
     "country": "Afghanistan",
@@ -338,49 +338,49 @@
   {
     "country": "Afghanistan",
     "geonameid": 1147540,
-    "name": "Baghl\u0101n",
-    "subcountry": "Wil\u0101yat-e Baghl\u0101n"
+    "name": "Baghln",
+    "subcountry": "Wilyat-e Baghln"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1148106,
-    "name": "\u0100rt Khw\u0101jah",
-    "subcountry": "Takh\u0101r"
+    "name": "rt Khwjah",
+    "subcountry": "Takhr"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1148205,
-    "name": "\u0100sm\u0101r",
+    "name": "smr",
     "subcountry": "Konar"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1148311,
-    "name": "Asad\u0101b\u0101d",
+    "name": "Asadbd",
     "subcountry": "Konar"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1148658,
-    "name": "Andkh\u014dy",
+    "name": "Andkhy",
     "subcountry": "Faryab"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1429434,
-    "name": "B\u0101z\u0101rak",
+    "name": "Bzrak",
     "subcountry": "Panjshir"
   },
   {
     "country": "Afghanistan",
     "geonameid": 1469706,
-    "name": "Markaz-e Woluswal\u012b-ye \u0100ch\u012bn",
-    "subcountry": "Nangarh\u0101r"
+    "name": "Markaz-e Woluswal-ye chn",
+    "subcountry": "Nangarhr"
   },
   {
     "country": "Antigua and Barbuda",
     "geonameid": 3576022,
-    "name": "Saint John\u2019s",
+    "name": "Saint Johns",
     "subcountry": "Saint John"
   },
   {
@@ -392,26 +392,26 @@
   {
     "country": "Albania",
     "geonameid": 363243,
-    "name": "Sarand\u00eb",
-    "subcountry": "Vlor\u00eb"
+    "name": "Sarand",
+    "subcountry": "Vlor"
   },
   {
     "country": "Albania",
     "geonameid": 782661,
-    "name": "Kuk\u00ebs",
-    "subcountry": "Kuk\u00ebs"
+    "name": "Kuks",
+    "subcountry": "Kuks"
   },
   {
     "country": "Albania",
     "geonameid": 782756,
-    "name": "Kor\u00e7\u00eb",
-    "subcountry": "Kor\u00e7\u00eb"
+    "name": "Kor",
+    "subcountry": "Kor"
   },
   {
     "country": "Albania",
     "geonameid": 783148,
-    "name": "Gjirokast\u00ebr",
-    "subcountry": "Gjirokast\u00ebr"
+    "name": "Gjirokastr",
+    "subcountry": "Gjirokastr"
   },
   {
     "country": "Albania",
@@ -423,25 +423,24 @@
     "country": "Albania",
     "geonameid": 783493,
     "name": "Burrel",
-    "subcountry": "Dib\u00ebr"
+    "subcountry": "Dibr"
   },
   {
     "country": "Albania",
     "geonameid": 3183719,
-    "name": "Vlor\u00eb",
-    "subcountry": "Vlor\u00eb"
+    "name": "Vlor",
+    "subcountry": "Vlor"
   },
   {
     "country": "Albania",
     "geonameid": 3183875,
     "name": "Tirana",
-    "subcountry": "Tiran\u00eb"
+    "subcountry": "Tiran"
   },
   {
     "country": "Albania",
     "geonameid": 3184081,
-    "name": "Shkod\u00ebr",
-    "subcountry": "Shkod\u00ebr"
+    "name": "Shkodr"
   },
   {
     "country": "Albania",
@@ -452,43 +451,43 @@
   {
     "country": "Albania",
     "geonameid": 3184862,
-    "name": "Lushnj\u00eb",
+    "name": "Lushnj",
     "subcountry": "Fier"
   },
   {
     "country": "Albania",
     "geonameid": 3184935,
-    "name": "Lezh\u00eb",
-    "subcountry": "Lezh\u00eb"
+    "name": "Lezh",
+    "subcountry": "Lezh"
   },
   {
     "country": "Albania",
     "geonameid": 3185012,
-    "name": "La\u00e7",
-    "subcountry": "Lezh\u00eb"
+    "name": "La",
+    "subcountry": "Lezh"
   },
   {
     "country": "Albania",
     "geonameid": 3185060,
-    "name": "Ku\u00e7ov\u00eb",
+    "name": "Kuov",
     "subcountry": "Berat"
   },
   {
     "country": "Albania",
     "geonameid": 3185082,
-    "name": "Kruj\u00eb",
-    "subcountry": "Durr\u00ebs"
+    "name": "Kruj",
+    "subcountry": "Durrs"
   },
   {
     "country": "Albania",
     "geonameid": 3185211,
-    "name": "Kavaj\u00eb",
-    "subcountry": "Tiran\u00eb"
+    "name": "Kavaj",
+    "subcountry": "Tiran"
   },
   {
     "country": "Albania",
     "geonameid": 3185670,
-    "name": "Fier-\u00c7if\u00e7i",
+    "name": "Fier-ifi",
     "subcountry": "Fier"
   },
   {
@@ -500,8 +499,8 @@
   {
     "country": "Albania",
     "geonameid": 3185728,
-    "name": "Durr\u00ebs",
-    "subcountry": "Durr\u00ebs"
+    "name": "Durrs",
+    "subcountry": "Durrs"
   },
   {
     "country": "Albania",
@@ -524,7 +523,7 @@
   {
     "country": "Armenia",
     "geonameid": 174972,
-    "name": "Hats\u2019avan",
+    "name": "Hatsavan",
     "subcountry": "Syunik Province"
   },
   {
@@ -632,8 +631,8 @@
   {
     "country": "Angola",
     "geonameid": 2236568,
-    "name": "U\u00edge",
-    "subcountry": "U\u00edge"
+    "name": "Uge",
+    "subcountry": "Uge"
   },
   {
     "country": "Angola",
@@ -650,7 +649,7 @@
   {
     "country": "Angola",
     "geonameid": 2239076,
-    "name": "N\u2019dalatando",
+    "name": "Ndalatando",
     "subcountry": "Cuanza Norte"
   },
   {
@@ -711,7 +710,7 @@
     "country": "Angola",
     "geonameid": 3347762,
     "name": "Lubango",
-    "subcountry": "Hu\u00edla"
+    "subcountry": "Hula"
   },
   {
     "country": "Angola",
@@ -729,7 +728,7 @@
     "country": "Angola",
     "geonameid": 3348078,
     "name": "Cuito",
-    "subcountry": "Bi\u00e9"
+    "subcountry": "Bi"
   },
   {
     "country": "Angola",
@@ -747,24 +746,24 @@
     "country": "Angola",
     "geonameid": 3350372,
     "name": "Catabola",
-    "subcountry": "Bi\u00e9"
+    "subcountry": "Bi"
   },
   {
     "country": "Angola",
     "geonameid": 3351014,
     "name": "Camacupa",
-    "subcountry": "Bi\u00e9"
+    "subcountry": "Bi"
   },
   {
     "country": "Angola",
     "geonameid": 3351024,
     "name": "Caluquembe",
-    "subcountry": "Hu\u00edla"
+    "subcountry": "Hula"
   },
   {
     "country": "Angola",
     "geonameid": 3351500,
-    "name": "Ca\u00e1la",
+    "name": "Cala",
     "subcountry": "Huambo"
   },
   {
@@ -776,7 +775,7 @@
   {
     "country": "Argentina",
     "geonameid": 3427213,
-    "name": "Z\u00e1rate",
+    "name": "Zrate",
     "subcountry": "Buenos Aires"
   },
   {
@@ -824,7 +823,7 @@
   {
     "country": "Argentina",
     "geonameid": 3428071,
-    "name": "Santo Tom\u00e9",
+    "name": "Santo Tom",
     "subcountry": "Corrientes"
   },
   {
@@ -902,7 +901,7 @@
   {
     "country": "Argentina",
     "geonameid": 3429777,
-    "name": "Puerto Iguaz\u00fa",
+    "name": "Puerto Iguaz",
     "subcountry": "Misiones"
   },
   {
@@ -932,7 +931,7 @@
   {
     "country": "Argentina",
     "geonameid": 3429949,
-    "name": "Piran\u00e9",
+    "name": "Piran",
     "subcountry": "Formosa"
   },
   {
@@ -944,7 +943,7 @@
   {
     "country": "Argentina",
     "geonameid": 3430340,
-    "name": "Ober\u00e1",
+    "name": "Ober",
     "subcountry": "Misiones"
   },
   {
@@ -956,7 +955,7 @@
   {
     "country": "Argentina",
     "geonameid": 3430545,
-    "name": "Mor\u00f3n",
+    "name": "Morn",
     "subcountry": "Buenos Aires"
   },
   {
@@ -992,7 +991,7 @@
   {
     "country": "Argentina",
     "geonameid": 3430988,
-    "name": "Luj\u00e1n",
+    "name": "Lujn",
     "subcountry": "Buenos Aires"
   },
   {
@@ -1010,13 +1009,13 @@
   {
     "country": "Argentina",
     "geonameid": 3433349,
-    "name": "Jard\u00edn Am\u00e9rica",
+    "name": "Jardn Amrica",
     "subcountry": "Misiones"
   },
   {
     "country": "Argentina",
     "geonameid": 3433658,
-    "name": "Gualeguaych\u00fa",
+    "name": "Gualeguaych",
     "subcountry": "Entre Rios"
   },
   {
@@ -1034,19 +1033,19 @@
   {
     "country": "Argentina",
     "geonameid": 3433753,
-    "name": "Gobernador Ingeniero Valent\u00edn Virasoro",
+    "name": "Gobernador Ingeniero Valentn Virasoro",
     "subcountry": "Corrientes"
   },
   {
     "country": "Argentina",
     "geonameid": 3433803,
-    "name": "General Jos\u00e9 de San Mart\u00edn",
+    "name": "General Jos de San Martn",
     "subcountry": "Chaco"
   },
   {
     "country": "Argentina",
     "geonameid": 3433836,
-    "name": "Garup\u00e1",
+    "name": "Garup",
     "subcountry": "Misiones"
   },
   {
@@ -1088,7 +1087,7 @@
   {
     "country": "Argentina",
     "geonameid": 3435103,
-    "name": "Curuz\u00fa Cuati\u00e1",
+    "name": "Curuz Cuati",
     "subcountry": "Corrientes"
   },
   {
@@ -1106,7 +1105,7 @@
   {
     "country": "Argentina",
     "geonameid": 3435264,
-    "name": "Concepci\u00f3n del Uruguay",
+    "name": "Concepcin del Uruguay",
     "subcountry": "Entre Rios"
   },
   {
@@ -1118,7 +1117,7 @@
   {
     "country": "Argentina",
     "geonameid": 3435486,
-    "name": "Chajar\u00ed",
+    "name": "Chajar",
     "subcountry": "Entre Rios"
   },
   {
@@ -1154,7 +1153,7 @@
   {
     "country": "Argentina",
     "geonameid": 3436287,
-    "name": "Arist\u00f3bulo del Valle",
+    "name": "Aristbulo del Valle",
     "subcountry": "Misiones"
   },
   {
@@ -1167,7 +1166,7 @@
     "country": "Argentina",
     "geonameid": 3832260,
     "name": "Yerba Buena",
-    "subcountry": "Tucum\u00e1n"
+    "subcountry": "Tucumn"
   },
   {
     "country": "Argentina",
@@ -1190,7 +1189,7 @@
   {
     "country": "Argentina",
     "geonameid": 3832694,
-    "name": "Villa Mar\u00eda",
+    "name": "Villa Mara",
     "subcountry": "Cordoba"
   },
   {
@@ -1202,7 +1201,7 @@
   {
     "country": "Argentina",
     "geonameid": 3832778,
-    "name": "Villa Constituci\u00f3n",
+    "name": "Villa Constitucin",
     "subcountry": "Santa Fe"
   },
   {
@@ -1214,7 +1213,7 @@
   {
     "country": "Argentina",
     "geonameid": 3832811,
-    "name": "Villa \u00c1ngela",
+    "name": "Villa ngela",
     "subcountry": "Chaco"
   },
   {
@@ -1286,7 +1285,7 @@
   {
     "country": "Argentina",
     "geonameid": 3834502,
-    "name": "Termas de R\u00edo Hondo",
+    "name": "Termas de Ro Hondo",
     "subcountry": "Santiago del Estero"
   },
   {
@@ -1298,8 +1297,8 @@
   {
     "country": "Argentina",
     "geonameid": 3834813,
-    "name": "Taf\u00ed Viejo",
-    "subcountry": "Tucum\u00e1n"
+    "name": "Taf Viejo",
+    "subcountry": "Tucumn"
   },
   {
     "country": "Argentina",
@@ -1310,7 +1309,7 @@
   {
     "country": "Argentina",
     "geonameid": 3835793,
-    "name": "Santo Tom\u00e9",
+    "name": "Santo Tom",
     "subcountry": "Santa Fe"
   },
   {
@@ -1328,7 +1327,7 @@
   {
     "country": "Argentina",
     "geonameid": 3836194,
-    "name": "Santa Luc\u00eda",
+    "name": "Santa Luca",
     "subcountry": "San Juan"
   },
   {
@@ -1346,7 +1345,7 @@
   {
     "country": "Argentina",
     "geonameid": 3836620,
-    "name": "San Ram\u00f3n de la Nueva Or\u00e1n",
+    "name": "San Ramn de la Nueva Orn",
     "subcountry": "Salta"
   },
   {
@@ -1364,25 +1363,25 @@
   {
     "country": "Argentina",
     "geonameid": 3836846,
-    "name": "San Nicol\u00e1s de los Arroyos",
+    "name": "San Nicols de los Arroyos",
     "subcountry": "Buenos Aires"
   },
   {
     "country": "Argentina",
     "geonameid": 3836873,
-    "name": "San Miguel de Tucum\u00e1n",
-    "subcountry": "Tucum\u00e1n"
+    "name": "San Miguel de Tucumn",
+    "subcountry": "Tucumn"
   },
   {
     "country": "Argentina",
     "geonameid": 3836951,
-    "name": "San Mart\u00edn de los Andes",
+    "name": "San Martn de los Andes",
     "subcountry": "Neuquen"
   },
   {
     "country": "Argentina",
     "geonameid": 3836992,
-    "name": "San Mart\u00edn",
+    "name": "San Martn",
     "subcountry": "Mendoza"
   },
   {
@@ -1406,7 +1405,7 @@
   {
     "country": "Argentina",
     "geonameid": 3837240,
-    "name": "San Jos\u00e9 de J\u00e1chal",
+    "name": "San Jos de Jchal",
     "subcountry": "San Juan"
   },
   {
@@ -1454,31 +1453,31 @@
   {
     "country": "Argentina",
     "geonameid": 3838793,
-    "name": "R\u00edo Tercero",
+    "name": "Ro Tercero",
     "subcountry": "Cordoba"
   },
   {
     "country": "Argentina",
     "geonameid": 3838797,
-    "name": "R\u00edo Segundo",
+    "name": "Ro Segundo",
     "subcountry": "Cordoba"
   },
   {
     "country": "Argentina",
     "geonameid": 3838859,
-    "name": "R\u00edo Gallegos",
+    "name": "Ro Gallegos",
     "subcountry": "Santa Cruz"
   },
   {
     "country": "Argentina",
     "geonameid": 3838874,
-    "name": "R\u00edo Cuarto",
+    "name": "Ro Cuarto",
     "subcountry": "Cordoba"
   },
   {
     "country": "Argentina",
     "geonameid": 3838902,
-    "name": "R\u00edo Ceballos",
+    "name": "Ro Ceballos",
     "subcountry": "Cordoba"
   },
   {
@@ -1514,7 +1513,7 @@
   {
     "country": "Argentina",
     "geonameid": 3840300,
-    "name": "Presidencia Roque S\u00e1enz Pe\u00f1a",
+    "name": "Presidencia Roque Senz Pea",
     "subcountry": "Chaco"
   },
   {
@@ -1538,25 +1537,25 @@
   {
     "country": "Argentina",
     "geonameid": 3841500,
-    "name": "P\u00e9rez",
+    "name": "Prez",
     "subcountry": "Santa Fe"
   },
   {
     "country": "Argentina",
     "geonameid": 3841956,
-    "name": "Paran\u00e1",
+    "name": "Paran",
     "subcountry": "Entre Rios"
   },
   {
     "country": "Argentina",
     "geonameid": 3842190,
-    "name": "Palpal\u00e1",
+    "name": "Palpal",
     "subcountry": "Jujuy"
   },
   {
     "country": "Argentina",
     "geonameid": 3842670,
-    "name": "Olavarr\u00eda",
+    "name": "Olavarra",
     "subcountry": "Buenos Aires"
   },
   {
@@ -1568,7 +1567,7 @@
   {
     "country": "Argentina",
     "geonameid": 3843123,
-    "name": "Neuqu\u00e9n",
+    "name": "Neuqun",
     "subcountry": "Neuquen"
   },
   {
@@ -1581,7 +1580,7 @@
     "country": "Argentina",
     "geonameid": 3843803,
     "name": "Monteros",
-    "subcountry": "Tucum\u00e1n"
+    "subcountry": "Tucumn"
   },
   {
     "country": "Argentina",
@@ -1592,7 +1591,7 @@
   {
     "country": "Argentina",
     "geonameid": 3844899,
-    "name": "Marcos Ju\u00e1rez",
+    "name": "Marcos Jurez",
     "subcountry": "Cordoba"
   },
   {
@@ -1610,13 +1609,13 @@
   {
     "country": "Argentina",
     "geonameid": 3846915,
-    "name": "Libertador General San Mart\u00edn",
+    "name": "Libertador General San Martn",
     "subcountry": "Jujuy"
   },
   {
     "country": "Argentina",
     "geonameid": 3848687,
-    "name": "Las Bre\u00f1as",
+    "name": "Las Breas",
     "subcountry": "Chaco"
   },
   {
@@ -1646,19 +1645,19 @@
   {
     "country": "Argentina",
     "geonameid": 3853354,
-    "name": "Jun\u00edn",
+    "name": "Junn",
     "subcountry": "Buenos Aires"
   },
   {
     "country": "Argentina",
     "geonameid": 3853491,
-    "name": "Joaqu\u00edn V. Gonz\u00e1lez",
+    "name": "Joaqun V. Gonzlez",
     "subcountry": "Salta"
   },
   {
     "country": "Argentina",
     "geonameid": 3853510,
-    "name": "Jes\u00fas Mar\u00eda",
+    "name": "Jess Mara",
     "subcountry": "Cordoba"
   },
   {
@@ -1670,7 +1669,7 @@
   {
     "country": "Argentina",
     "geonameid": 3854985,
-    "name": "Gobernador G\u00e1lvez",
+    "name": "Gobernador Glvez",
     "subcountry": "Santa Fe"
   },
   {
@@ -1700,7 +1699,7 @@
   {
     "country": "Argentina",
     "geonameid": 3855244,
-    "name": "G\u00e1lvez",
+    "name": "Glvez",
     "subcountry": "Santa Fe"
   },
   {
@@ -1712,8 +1711,8 @@
   {
     "country": "Argentina",
     "geonameid": 3855666,
-    "name": "Famaill\u00e1",
-    "subcountry": "Tucum\u00e1n"
+    "name": "Famaill",
+    "subcountry": "Tucumn"
   },
   {
     "country": "Argentina",
@@ -1730,7 +1729,7 @@
   {
     "country": "Argentina",
     "geonameid": 3856231,
-    "name": "Embarcaci\u00f3n",
+    "name": "Embarcacin",
     "subcountry": "Salta"
   },
   {
@@ -1742,7 +1741,7 @@
   {
     "country": "Argentina",
     "geonameid": 3858765,
-    "name": "El Bols\u00f3n",
+    "name": "El Bolsn",
     "subcountry": "Rio Negro"
   },
   {
@@ -1754,13 +1753,13 @@
   {
     "country": "Argentina",
     "geonameid": 3859512,
-    "name": "De\u00e1n Funes",
+    "name": "Den Funes",
     "subcountry": "Cordoba"
   },
   {
     "country": "Argentina",
     "geonameid": 3859552,
-    "name": "Cutral-C\u00f3",
+    "name": "Cutral-C",
     "subcountry": "Neuquen"
   },
   {
@@ -1778,13 +1777,13 @@
   {
     "country": "Argentina",
     "geonameid": 3859965,
-    "name": "Cosqu\u00edn",
+    "name": "Cosqun",
     "subcountry": "Cordoba"
   },
   {
     "country": "Argentina",
     "geonameid": 3860164,
-    "name": "Coronel Su\u00e1rez",
+    "name": "Coronel Surez",
     "subcountry": "Buenos Aires"
   },
   {
@@ -1796,7 +1795,7 @@
   {
     "country": "Argentina",
     "geonameid": 3860259,
-    "name": "C\u00f3rdoba",
+    "name": "Crdoba",
     "subcountry": "Cordoba"
   },
   {
@@ -1880,19 +1879,19 @@
   {
     "country": "Argentina",
     "geonameid": 3862655,
-    "name": "Carcara\u00f1\u00e1",
+    "name": "Carcara",
     "subcountry": "Santa Fe"
   },
   {
     "country": "Argentina",
     "geonameid": 3862738,
-    "name": "Capit\u00e1n Berm\u00fadez",
+    "name": "Capitn Bermdez",
     "subcountry": "Santa Fe"
   },
   {
     "country": "Argentina",
     "geonameid": 3862981,
-    "name": "Ca\u00f1ada de G\u00f3mez",
+    "name": "Caada de Gmez",
     "subcountry": "Santa Fe"
   },
   {
@@ -1911,12 +1910,12 @@
     "country": "Argentina",
     "geonameid": 3864375,
     "name": "Bella Vista",
-    "subcountry": "Tucum\u00e1n"
+    "subcountry": "Tucumn"
   },
   {
     "country": "Argentina",
     "geonameid": 3865086,
-    "name": "Bah\u00eda Blanca",
+    "name": "Baha Blanca",
     "subcountry": "Buenos Aires"
   },
   {
@@ -1934,7 +1933,7 @@
   {
     "country": "Argentina",
     "geonameid": 3865840,
-    "name": "A\u00f1atuya",
+    "name": "Aatuya",
     "subcountry": "Santiago del Estero"
   },
   {
@@ -1953,19 +1952,19 @@
     "country": "Argentina",
     "geonameid": 3866367,
     "name": "Alderetes",
-    "subcountry": "Tucum\u00e1n"
+    "subcountry": "Tucumn"
   },
   {
     "country": "Argentina",
     "geonameid": 3866425,
-    "name": "Albard\u00f3n",
+    "name": "Albardn",
     "subcountry": "San Juan"
   },
   {
     "country": "Argentina",
     "geonameid": 3866496,
     "name": "Aguilares",
-    "subcountry": "Tucum\u00e1n"
+    "subcountry": "Tucumn"
   },
   {
     "country": "Argentina",
@@ -1988,7 +1987,7 @@
   {
     "country": "Argentina",
     "geonameid": 10172104,
-    "name": "Adrogu\u00e9",
+    "name": "Adrogu",
     "subcountry": "Buenos Aires"
   },
   {
@@ -2072,7 +2071,7 @@
   {
     "country": "Austria",
     "geonameid": 2766429,
-    "name": "Sankt P\u00f6lten",
+    "name": "Sankt Plten",
     "subcountry": "Lower Austria"
   },
   {
@@ -2090,7 +2089,7 @@
   {
     "country": "Austria",
     "geonameid": 2771335,
-    "name": "M\u00f6dling",
+    "name": "Mdling",
     "subcountry": "Lower Austria"
   },
   {
@@ -2138,7 +2137,7 @@
   {
     "country": "Austria",
     "geonameid": 2774326,
-    "name": "Klagenfurt am W\u00f6rthersee",
+    "name": "Klagenfurt am Wrthersee",
     "subcountry": "Carinthia"
   },
   {
@@ -6326,7 +6325,7 @@
   {
     "country": "Benin",
     "geonameid": 2393551,
-    "name": "K\u00e9tou",
+    "name": "Ktou",
     "subcountry": "Plateau"
   },
   {
@@ -6350,13 +6349,13 @@
   {
     "country": "Benin",
     "geonameid": 2394711,
-    "name": "Dassa-Zoum\u00e9",
+    "name": "Dassa-Zoum",
     "subcountry": "Collines"
   },
   {
     "country": "Benin",
     "geonameid": 2394814,
-    "name": "Cov\u00e9",
+    "name": "Cov",
     "subcountry": "Zou"
   },
   {
@@ -6398,7 +6397,7 @@
   {
     "country": "Benin",
     "geonameid": 2395568,
-    "name": "Aplahou\u00e9",
+    "name": "Aplahou",
     "subcountry": "Kouffo"
   },
   {
@@ -6489,7 +6488,7 @@
     "country": "Bolivia",
     "geonameid": 3902202,
     "name": "Tupiza",
-    "subcountry": "Potos\u00ed"
+    "subcountry": "Potos"
   },
   {
     "country": "Bolivia",
@@ -6548,8 +6547,8 @@
   {
     "country": "Bolivia",
     "geonameid": 3907584,
-    "name": "Potos\u00ed",
-    "subcountry": "Potos\u00ed"
+    "name": "Potos",
+    "subcountry": "Potos"
   },
   {
     "country": "Bolivia",
@@ -6573,7 +6572,7 @@
     "country": "Bolivia",
     "geonameid": 3911409,
     "name": "Llallagua",
-    "subcountry": "Potos\u00ed"
+    "subcountry": "Potos"
   },
   {
     "country": "Bolivia",
@@ -6590,7 +6589,7 @@
   {
     "country": "Bolivia",
     "geonameid": 3915350,
-    "name": "Guayaramer\u00edn",
+    "name": "Guayaramern",
     "subcountry": "El Beni"
   },
   {
@@ -6626,13 +6625,13 @@
   {
     "country": "Brazil",
     "geonameid": 3384986,
-    "name": "Vit\u00f3ria do Mearim",
-    "subcountry": "Maranh\u00e3o"
+    "name": "Vitria do Mearim",
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3384987,
-    "name": "Vit\u00f3ria de Santo Ant\u00e3o",
+    "name": "Vitria de Santo Anto",
     "subcountry": "Pernambuco"
   },
   {
@@ -6651,79 +6650,79 @@
     "country": "Brazil",
     "geonameid": 3385088,
     "name": "Vigia",
-    "subcountry": "Par\u00e1"
+    "subcountry": "Par"
   },
   {
     "country": "Brazil",
     "geonameid": 3385106,
-    "name": "Vi\u00e7osa do Cear\u00e1",
-    "subcountry": "Cear\u00e1"
+    "name": "Viosa do Cear",
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
     "geonameid": 3385109,
-    "name": "Vi\u00e7osa",
+    "name": "Viosa",
     "subcountry": "Alagoas"
   },
   {
     "country": "Brazil",
     "geonameid": 3385122,
     "name": "Viana",
-    "subcountry": "Maranh\u00e3o"
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3385467,
-    "name": "V\u00e1rzea Alegre",
-    "subcountry": "Cear\u00e1"
+    "name": "Vrzea Alegre",
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
     "geonameid": 3385504,
     "name": "Varjota",
-    "subcountry": "Cear\u00e1"
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
     "geonameid": 3385538,
     "name": "Vargem Grande",
-    "subcountry": "Maranh\u00e3o"
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3385592,
-    "name": "Valen\u00e7a do Piau\u00ed",
-    "subcountry": "Piau\u00ed"
+    "name": "Valena do Piau",
+    "subcountry": "Piau"
   },
   {
     "country": "Brazil",
     "geonameid": 3385742,
-    "name": "Uni\u00e3o dos Palmares",
+    "name": "Unio dos Palmares",
     "subcountry": "Alagoas"
   },
   {
     "country": "Brazil",
     "geonameid": 3385745,
-    "name": "Uni\u00e3o",
-    "subcountry": "Piau\u00ed"
+    "name": "Unio",
+    "subcountry": "Piau"
   },
   {
     "country": "Brazil",
     "geonameid": 3385922,
     "name": "Tuntum",
-    "subcountry": "Maranh\u00e3o"
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3385935,
-    "name": "Tucuru\u00ed",
-    "subcountry": "Par\u00e1"
+    "name": "Tucuru",
+    "subcountry": "Par"
   },
   {
     "country": "Brazil",
     "geonameid": 3385980,
-    "name": "Tucum\u00e3",
-    "subcountry": "Par\u00e1"
+    "name": "Tucum",
+    "subcountry": "Par"
   },
   {
     "country": "Brazil",
@@ -6735,7 +6734,7 @@
     "country": "Brazil",
     "geonameid": 3386177,
     "name": "Trairi",
-    "subcountry": "Cear\u00e1"
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
@@ -6746,49 +6745,49 @@
   {
     "country": "Brazil",
     "geonameid": 3386279,
-    "name": "Tom\u00e9 A\u00e7u",
-    "subcountry": "Par\u00e1"
+    "name": "Tom Au",
+    "subcountry": "Par"
   },
   {
     "country": "Brazil",
     "geonameid": 3386361,
     "name": "Timon",
-    "subcountry": "Maranh\u00e3o"
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3386372,
     "name": "Timbiras",
-    "subcountry": "Maranh\u00e3o"
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3386396,
-    "name": "Timba\u00faba",
+    "name": "Timbaba",
     "subcountry": "Pernambuco"
   },
   {
     "country": "Brazil",
     "geonameid": 3386449,
-    "name": "Tiangu\u00e1",
-    "subcountry": "Cear\u00e1"
+    "name": "Tiangu",
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
     "geonameid": 3386496,
     "name": "Teresina",
-    "subcountry": "Piau\u00ed"
+    "subcountry": "Piau"
   },
   {
     "country": "Brazil",
     "geonameid": 3386567,
-    "name": "S\u00e3o Jo\u00e3o dos Inhamuns",
-    "subcountry": "Cear\u00e1"
+    "name": "So Joo dos Inhamuns",
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
     "geonameid": 3386931,
-    "name": "Tamandar\u00e9",
+    "name": "Tamandar",
     "subcountry": "Pernambuco"
   },
   {
@@ -6807,36 +6806,36 @@
     "country": "Brazil",
     "geonameid": 3387202,
     "name": "Sousa",
-    "subcountry": "Para\u00edba"
+    "subcountry": "Paraba"
   },
   {
     "country": "Brazil",
     "geonameid": 3387204,
     "name": "Soure",
-    "subcountry": "Par\u00e1"
+    "subcountry": "Par"
   },
   {
     "country": "Brazil",
     "geonameid": 3387266,
-    "name": "Sol\u00e2nea",
-    "subcountry": "Para\u00edba"
+    "name": "Solnea",
+    "subcountry": "Paraba"
   },
   {
     "country": "Brazil",
     "geonameid": 3387296,
     "name": "Sobral",
-    "subcountry": "Cear\u00e1"
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
     "geonameid": 3387604,
-    "name": "Sirinha\u00e9m",
+    "name": "Sirinham",
     "subcountry": "Pernambuco"
   },
   {
     "country": "Brazil",
     "geonameid": 3387663,
-    "name": "Sert\u00e2nia",
+    "name": "Sertnia",
     "subcountry": "Pernambuco"
   },
   {
@@ -6849,7 +6848,7 @@
     "country": "Brazil",
     "geonameid": 3387926,
     "name": "Senador Pompeu",
-    "subcountry": "Cear\u00e1"
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
@@ -6860,122 +6859,122 @@
   {
     "country": "Brazil",
     "geonameid": 3388145,
-    "name": "S\u00e3o Raimundo Nonato",
-    "subcountry": "Piau\u00ed"
+    "name": "So Raimundo Nonato",
+    "subcountry": "Piau"
   },
   {
     "country": "Brazil",
     "geonameid": 3388269,
-    "name": "S\u00e3o Miguel dos Campos",
+    "name": "So Miguel dos Campos",
     "subcountry": "Alagoas"
   },
   {
     "country": "Brazil",
     "geonameid": 3388270,
-    "name": "S\u00e3o Miguel do Guam\u00e1",
-    "subcountry": "Par\u00e1"
+    "name": "So Miguel do Guam",
+    "subcountry": "Par"
   },
   {
     "country": "Brazil",
     "geonameid": 3388318,
-    "name": "S\u00e3o Mateus do Maranh\u00e3o",
-    "subcountry": "Maranh\u00e3o"
+    "name": "So Mateus do Maranho",
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3388341,
-    "name": "S\u00e3o Lu\u00eds do Quitunde",
+    "name": "So Lus do Quitunde",
     "subcountry": "Alagoas"
   },
   {
     "country": "Brazil",
     "geonameid": 3388368,
-    "name": "S\u00e3o Lu\u00eds",
-    "subcountry": "Maranh\u00e3o"
+    "name": "So Lus",
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3388376,
-    "name": "S\u00e3o Louren\u00e7o da Mata",
+    "name": "So Loureno da Mata",
     "subcountry": "Pernambuco"
   },
   {
     "country": "Brazil",
     "geonameid": 3388435,
-    "name": "S\u00e3o Jos\u00e9 do Egito",
+    "name": "So Jos do Egito",
     "subcountry": "Pernambuco"
   },
   {
     "country": "Brazil",
     "geonameid": 3388441,
-    "name": "S\u00e3o Jos\u00e9 de Ribamar",
-    "subcountry": "Maranh\u00e3o"
+    "name": "So Jos de Ribamar",
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3388443,
-    "name": "S\u00e3o Jos\u00e9 de Mipibu",
+    "name": "So Jos de Mipibu",
     "subcountry": "Rio Grande do Norte"
   },
   {
     "country": "Brazil",
     "geonameid": 3388615,
-    "name": "S\u00e3o Jo\u00e3o dos Patos",
-    "subcountry": "Maranh\u00e3o"
+    "name": "So Joo dos Patos",
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3388714,
-    "name": "S\u00e3o Gon\u00e7alo do Amarante",
-    "subcountry": "Cear\u00e1"
+    "name": "So Gonalo do Amarante",
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
     "geonameid": 3388847,
-    "name": "S\u00e3o F\u00e9lix do Xingu",
-    "subcountry": "Par\u00e1"
+    "name": "So Flix do Xingu",
+    "subcountry": "Par"
   },
   {
     "country": "Brazil",
     "geonameid": 3388868,
-    "name": "S\u00e3o Domingos do Maranh\u00e3o",
-    "subcountry": "Maranh\u00e3o"
+    "name": "So Domingos do Maranho",
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3388991,
-    "name": "S\u00e3o Bento",
-    "subcountry": "Para\u00edba"
+    "name": "So Bento",
+    "subcountry": "Paraba"
   },
   {
     "country": "Brazil",
     "geonameid": 3389006,
-    "name": "S\u00e3o Bento",
-    "subcountry": "Maranh\u00e3o"
+    "name": "So Bento",
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3389321,
     "name": "Santa Rita",
-    "subcountry": "Para\u00edba"
+    "subcountry": "Paraba"
   },
   {
     "country": "Brazil",
     "geonameid": 3389353,
-    "name": "Santar\u00e9m",
-    "subcountry": "Par\u00e1"
+    "name": "Santarm",
+    "subcountry": "Par"
   },
   {
     "country": "Brazil",
     "geonameid": 3389358,
-    "name": "Santa Quit\u00e9ria do Maranh\u00e3o",
-    "subcountry": "Maranh\u00e3o"
+    "name": "Santa Quitria do Maranho",
+    "subcountry": "Maranho"
   },
   {
     "country": "Brazil",
     "geonameid": 3389361,
-    "name": "Santa Quit\u00e9ria",
-    "subcountry": "Cear\u00e1"
+    "name": "Santa Quitria",
+    "subcountry": "Cear"
   },
   {
     "country": "Brazil",
@@ -52370,7 +52369,7 @@
   {
     "country": "Israel",
     "geonameid": 293619,
-    "name": "Sederot",
+    "name": "Sderot",
     "subcountry": "Southern District"
   },
   {

@@ -18,10 +18,12 @@ public class CategoriesController {
 	@GetMapping("/submission")
 	public Submission submission(
 			@RequestParam(value = "country_name", defaultValue = "") String country_name,
+			@RequestParam(value = "animal_name", defaultValue = "") String animal_name,
 			@RequestParam(value = "city_name", defaultValue = "") String city_name) {
 		Country country = new Country(country_name);
 		City city = new City(city_name);
-		Submission response = new Submission(country,city);
+		Animal animal = new Animal(animal_name);
+		Submission response = new Submission(country,city,animal);
 		return (response);
 		//return (country);
 	}
