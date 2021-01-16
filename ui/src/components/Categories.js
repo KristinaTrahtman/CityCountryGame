@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { useFormik } from 'formik'
 import { LetterContext}  from  './GenerateRandomLetter'
 import axios from 'axios'
-import Popup from 'react-popup';
 
 
 const api = axios.create({
@@ -20,6 +19,7 @@ function reloadPage(){
             let errors ={} 
             console.log('before validate Country:', formik.values.countrySuccess)
             console.log('before validate city:', formik.values.citySuccess)
+            console.log('before validate animal:', formik.values.animalSuccess)
             console.log('Letter in Categories is : ',  letterContext)
 
             console.log('letterContext.toLowerCase() : ',  letterContext.toLowerCase())
@@ -34,21 +34,30 @@ function reloadPage(){
             } 
 
             if(letterContext.toLowerCase() !==   formik.values.country.charAt(0).toLowerCase()){ 
-                  console.log('letter error contry')
+                  console.log('letter error country')
                   errors.country = 'Wrong Letter, please be cuation!' 
                   letterFail = true
             } 
+
+            if(letterContext.toLowerCase() !==   formik.values.animal.charAt(0).toLowerCase()){ 
+                  console.log('letter error animal')
+                  errors.animal = 'Wrong Letter, please be cuation!' 
+                  letterFail = true
+            } 
+
 
             if(letterFail){
                   console.log(errors)
                   return errors
             } 
 
-            await api.get('?country_name='+formik.values.country + '&city_name='+formik.values.city).then((response) => {
+            await api.get('?country_name='+formik.values.country + '&city_name='+formik.values.city +'&animal_name='+formik.values.animal).then((response) => {
                   formik.values.countrySuccess = response.data.content.Country
                   formik.values.citySuccess = response.data.content.City
+                  formik.values.animalSuccess = response.data.content.Animal
                   console.log('Response Country: ',  response.data.content.Country)
-                  console.log('Response City: ',  response.data.content.City)                 
+                  console.log('Response City: ',  response.data.content.City) 
+                  console.log('Response Animal: ',  response.data.content.Animal)                 
             });
       
            
@@ -61,6 +70,12 @@ function reloadPage(){
                   console.log('setting error')
                   errors.city = 'No such city exists!'    
             }
+
+            if(formik.values.animalSuccess !== 'True'){
+                  console.log('setting error')
+                  errors.animal = 'No such Animal exists!'    
+            }
+
             if(Object.entries(errors).length === 0){
                   alert('Wow you are Amazing!!!!');
                   setTimeout(reloadPage, 100)                
@@ -72,9 +87,11 @@ function reloadPage(){
             initialValues: {
             country: '',
             city: '', 
-            //success: 'false'
+            animal: '',
+         
             citySuccess: 'false',
-            countrySuccess: 'false'
+            countrySuccess: 'false',
+            animalSuccess: 'false'
             },
             onSubmit: values => {
                   console.log('Submitting!')
@@ -97,9 +114,12 @@ function reloadPage(){
                   <input type= 'text' id='city' city='city' onChange={formik.handleChange} value={formik.values.city}/>
                   {formik.errors.city ? <div>{formik.errors.city}</div>: null}
                   </label>
+                  <label htmlFor = 'animal'>Animal<br/>
+                  <input type= 'text' id='animal' animal='animal' onChange={formik.handleChange} value={formik.values.animal}/>
+                  {formik.errors.animal ? <div>{formik.errors.animal}</div>: null}
+                  </label>
                   <input type="submit" value="Submit"/>
             </form>
-            <Popup />
       </div>
       )
 }

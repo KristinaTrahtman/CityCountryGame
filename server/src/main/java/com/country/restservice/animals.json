@@ -100,6 +100,9 @@
     "Hyena",
     "Ibex",
     "Ibis",
+    "Impala",
+    "Indri",
+    "Ibis",
     "Jackal",
     "Jaguar",
     "Jay",
@@ -139,6 +142,8 @@
     "Narwhal",
     "Newt",
     "Nightingale",
+    "Nutria",
+    "Numbat",
     "Octopus",
     "Okapi",
     "Opossum",
@@ -225,5 +230,8 @@
     "Worm",
     "Wren",
     "Yak",
-    "Zebra"
+    "Zebra",
+    "Zebu",
+    "Zeedonk",
+    "Zebra shark"
 ]

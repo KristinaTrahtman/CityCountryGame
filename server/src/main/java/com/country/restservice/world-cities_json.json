@@ -52308,6 +52308,12 @@
   },
   {
     "country": "Israel",
+    "geonameid": 23331,
+    "name": "Rehovot",
+    "subcountry": "Gush-dan"
+  },
+  {
+    "country": "Israel",
     "geonameid": 293100,
     "name": "Safed",
     "subcountry": "Northern District"
@@ -52603,13 +52609,13 @@
   {
     "country": "Israel",
     "geonameid": 294981,
-    "name": "Giv'at Shmuel",
+    "name": "Givat Shmuel",
     "subcountry": "Tel Aviv"
   },
   {
     "country": "Israel",
     "geonameid": 294999,
-    "name": "Giv'atayim",
+    "name": "Givatayim",
     "subcountry": "Tel Aviv"
   },
   {
@@ -135061,7 +135067,7 @@
   {
     "country": "Uzbekistan",
     "geonameid": 1512979,
-    "name": "Qo\u2018qon",
+    "name": "Qoqon",
     "subcountry": "Fergana"
   },
   {
@@ -135157,7 +135163,7 @@
   {
     "country": "Uzbekistan",
     "geonameid": 1513364,
-    "name": "Q\u016drghontepa",
+    "name": "Qrghontepa",
     "subcountry": "Andijon"
   },
   {

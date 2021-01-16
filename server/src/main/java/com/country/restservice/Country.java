@@ -17,11 +17,12 @@ public class Country {
 
     public String validate() {
         String[] locales = Locale.getISOCountries();
+
         System.out.println("Country Name = " + country_name);
         for (String countryCode : locales) {
 
             Locale obj = new Locale("", countryCode);
-
+            System.out.println("Country Name = " + obj.getDisplayCountry());
 
             if (country_name.equalsIgnoreCase(obj.getDisplayCountry())) {
 

@@ -7,7 +7,7 @@ export const ResetContext = React.createContext()
 export const LetterContext = React.createContext()
 
 function GenerateRandomLetter() {
-      const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWYZ"
       const validate = async(response) => {
         formik.values.alphabet = alphabet[Math.floor(Math.random() * alphabet.length)]
         console.log('Validating!')
