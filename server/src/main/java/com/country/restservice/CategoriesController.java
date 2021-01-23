@@ -20,14 +20,12 @@ public class CategoriesController {
             @RequestParam(value = "plant_name", defaultValue = "") String plant_name,
             @RequestParam(value = "actor_name", defaultValue = "") String actor_name) {
 
-
         List<Category> categories = new ArrayList<>();
         categories.add(new Country(country_name));
         categories.add(new City(city_name));
         categories.add(new Animal(animal_name));
         categories.add(new Plant(plant_name));
         categories.add(new Actor(actor_name));
-
 
         Submission response = new Submission(categories);
         return (response);

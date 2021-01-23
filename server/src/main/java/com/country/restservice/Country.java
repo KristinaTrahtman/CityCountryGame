@@ -3,10 +3,10 @@ package com.country.restservice;
 import java.util.Locale;
 
 public class Country extends Category {
-    private final String country_name;
+    private final String userCategoryAnswer;
 
-    public Country(String country_name) {
-        this.country_name = country_name;
+    public Country(String userCategoryAnswer) {
+        this.userCategoryAnswer = userCategoryAnswer;
         this.categoryName = "Country";
     }
 
@@ -15,7 +15,7 @@ public class Country extends Category {
 
         for (String countryCode : locales) {
             Locale obj = new Locale("", countryCode);
-            if (country_name.equalsIgnoreCase(obj.getDisplayCountry())) {
+            if (userCategoryAnswer.equalsIgnoreCase(obj.getDisplayCountry())) {
                 return "True";
             }
         }
