@@ -3,7 +3,14 @@ import { useFormik } from 'formik'
 import { LetterContext}  from  './GenerateRandomLetter'
 import axios from 'axios'
 
-
+/*
+Categories is a child of generateRandomLetter.
+It recieves a letter from generateRandomLetter then, after the submission of the user, it validates the first char of every category that the user has entered. 
+If the first char in any category is different from the random letter it returns an error message to the UI for each category which has a difference. 
+Else, it sends a request to the java API server and each category is validated differently in the server. 
+If any of the fields is incorrect, an error message will be displayed under the field. 
+Else, a succsess message will alert the user and the page will be reloaded. 
+*/
 const api = axios.create({
       baseURL: 'http://localhost:8080/submission'
 })
@@ -17,42 +24,26 @@ function reloadPage(){
      
        const validate = async(response) => {
             let errors ={} 
-            console.log('before validate Country:', formik.values.countrySuccess)
-            console.log('before validate city:', formik.values.citySuccess)
-            console.log('before validate animal:', formik.values.animalSuccess)
-            console.log('before validate plant:', formik.values.plantSuccess)
-            console.log('before validate plant:', formik.values.actorSuccess)
-            console.log('Letter in Categories is : ',  letterContext)
-
-            console.log('letterContext.toLowerCase() : ',  letterContext.toLowerCase())
-            console.log('formik.values.city.charAt(0).toLowerCase() : ',  formik.values.city.charAt(0).toLowerCase())
-
             let letterFail = false
 
             if(letterContext.toLowerCase() !==   formik.values.city.charAt(0).toLowerCase()){
-                  console.log('letter error city')
                   errors.city = 'Wrong Letter, please be cuation!' 
                   letterFail = true
             } 
 
             if(letterContext.toLowerCase() !==   formik.values.country.charAt(0).toLowerCase()){ 
-                  console.log('letter error country')
                   errors.country = 'Wrong Letter, please be cuation!' 
                   letterFail = true
             } 
-
             if(letterContext.toLowerCase() !==   formik.values.animal.charAt(0).toLowerCase()){ 
-                  console.log('letter error animal')
                   errors.animal = 'Wrong Letter, please be cuation!' 
                   letterFail = true
             } 
             if(letterContext.toLowerCase() !==   formik.values.plant.charAt(0).toLowerCase()){ 
-                  console.log('letter error plant')
                   errors.plant = 'Wrong Letter, please be cuation!' 
                   letterFail = true
             } 
             if(letterContext.toLowerCase() !==   formik.values.actor.charAt(0).toLowerCase()){ 
-                  console.log('letter error plant')
                   errors.actor = 'Wrong Letter, please be cuation!' 
                   letterFail = true
             } 
@@ -69,36 +60,25 @@ function reloadPage(){
                   formik.values.animalSuccess = response.data.content.Animal
                   formik.values.plantSuccess = response.data.content.Plant
                   formik.values.actorSuccess = response.data.content.Actor
-
-                  console.log('Response Country: ',  response.data.content.Country)
-                  console.log('Response City: ',  response.data.content.City) 
-                  console.log('Response Animal: ',  response.data.content.Animal)  
-                  console.log('Response Animal: ',  response.data.content.Plant)
-                  console.log('Response Actor: ',  response.data.content.Actor)
-
             });
-      
-           
-            if(formik.values.countrySuccess !== 'True'){
-                  console.log('setting error')
+        
+            if(formik.values.countrySuccess !== 'True'){ 
                   errors.country = 'No such country exists!'    
-            }
-            
-            if(formik.values.citySuccess !== 'True'){
-                  console.log('setting error')
+            }   
+
+            if(formik.values.citySuccess !== 'True'){  
                   errors.city = 'No such city exists!'    
             }
 
-            if(formik.values.animalSuccess !== 'True'){
-                  console.log('setting error')
+            if(formik.values.animalSuccess !== 'True'){                
                   errors.animal = 'No such Animal exists!'    
             }
-            if(formik.values.plantSuccess !== 'True'){
-                  console.log('setting error')
+
+            if(formik.values.plantSuccess !== 'True'){        
                   errors.plant = 'No such Plant exists!'    
             }
-            if(formik.values.actorSuccess !== 'True'){
-                  console.log('setting error')
+
+            if(formik.values.actorSuccess !== 'True'){       
                   errors.actor = 'No such Actor exists!'    
             }
 
@@ -124,10 +104,7 @@ function reloadPage(){
             actorSuccess: 'false'
 
             },
-            onSubmit: values => {
-                  console.log('Submitting!')
-            },
-        
+           
             validateOnChange: false,
             validateOnBlur: false,
             validate
@@ -157,8 +134,6 @@ function reloadPage(){
                   <input type= 'text' id='actor' actor='actor' onChange={formik.handleChange} value={formik.values.actor}/>
                   {formik.errors.actor ? <div>{formik.errors.actor}</div>: null}
                   </label>
-
-
                   <input type="submit" value="Submit"/>
             </form>
       </div>

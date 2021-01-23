@@ -17,7 +17,7 @@ public class Plant {
     public String validate() {
         JSONParser parser = new JSONParser();
         try {
-            JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/plants.json"));
+            JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/categoriesDataJson/plants.json"));
 
             Iterator<JSONObject> iterator = jsonArray.iterator();
             while (iterator.hasNext()) {

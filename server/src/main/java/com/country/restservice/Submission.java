@@ -19,9 +19,6 @@ public class Submission {
         this.actor = actor;
     }
 
-    public long getId() {
-        return 0;
-    }
 
     public Map<String, String> getContent() {
         Map<String, String> response = new HashMap<>();

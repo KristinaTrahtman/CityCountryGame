@@ -3,6 +3,10 @@
       "name": "Alder",
       "species": "Alnus"
     },
+   {
+     "name": "Aloe Vera",
+     "species": "Asphodelaceae"
+   },
     {
       "name": "Black alder",
       "species": "Alnus glutinosa, Ilex verticillata"
@@ -879,6 +883,14 @@
       "name": "New Zealand flax",
       "species": "Phormium tenax, Phormium colensoi"
     },
+   {
+     "name": "Nectarine",
+     "species": "fruits"
+   },
+   {
+     "name": "Narcissus",
+     "species": "flowers"
+   },
     {
       "name": "Fluxroot",
       "species": "Asclepias tuberosa"
@@ -1840,9 +1852,14 @@
       "species": "Cercis occidentalis"
     },
     {
-      "name": "Judas-tree",
+      "name": "Judas tree",
       "species": "Cercis siliquastrum"
     },
+   {
+     "name": "Jasmine",
+     "species": "flower"
+   },
+
     {
       "name": "Red ink plant",
       "species": "Phytolacca americana"
@@ -2075,6 +2092,10 @@
       "name": "Orange swallow-wort",
       "species": "Asclepias tuberosa"
     },
+   {
+     "name": "orange",
+     "species": "Cercis fruits"
+   },
     {
       "name": "Silky swallow-wort",
       "species": "Asclepias syriaca"
@@ -2519,6 +2540,10 @@
       "name": "Yellowwood",
       "species": "Cladrastis lutea, Maclura pomifera"
     },
+   {
+     "name": "Yucca",
+     "species": "Cactus"
+   },
     {
       "name": "Yellow coneflower",
       "species": "Echinacea paradoxa"

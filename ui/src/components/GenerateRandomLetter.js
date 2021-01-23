@@ -27,7 +27,7 @@ function GenerateRandomLetter() {
       })
 
     return (
-      <div className="login-box">
+      <div className="cover">
         <ResetContext.Provider value={formik.values.reset}>
           <Clock initialSeconds={formik.values.start ? 59 : 0}/>
         </ResetContext.Provider>

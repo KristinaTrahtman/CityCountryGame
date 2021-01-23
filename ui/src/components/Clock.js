@@ -1,8 +1,13 @@
 import React, { useContext } from 'react'
 import { useState, useEffect } from 'react';
 import { ResetContext } from './GenerateRandomLetter'
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+
+/*
+Clock is a child of generateRandomLetter. 
+The timer starts only when the initial seconds is set to higher value than zero. 
+*/
+
 
 function reloadPage(){ 
     window.location.reload(false);

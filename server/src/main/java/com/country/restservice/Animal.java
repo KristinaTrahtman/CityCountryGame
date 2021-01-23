@@ -19,7 +19,7 @@ public class Animal {
         JSONParser parser = new JSONParser();
 
         try {
-            JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/com/country/restservice/animals.json"));
+            JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src/main/java/categoriesDataJson/animals.json"));
             Iterator<JSONObject> iterator = jsonArray.iterator();
 
             while (iterator.hasNext()) {

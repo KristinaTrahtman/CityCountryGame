@@ -1,18 +1,18 @@
-html, body {
+/* html, body {
   align-items: center;
-  background: #f2f4f8;
+  background: #9ba9c4;
   border: 0;
   display: flex;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   height: 100%;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-
+*/
 form {
-  --background: white;
+  --background: rgb(112, 29, 29);
   --border: rgba(0, 0, 0, 0.125);
   --borderDark: rgba(0, 0, 0, 0.25);
   --borderDarker: rgba(0, 0, 0, 0.5);
@@ -26,8 +26,8 @@ form {
   --shadeLight: 0.7;
   --shadeNormal: 0.5;
   --borderRadius: 0.125rem;
-  --highlight: #306090;
-  background: white;
+  --highlight: #cce016;
+  background: rgb(255, 255, 255);
   border: 1px solid var(--border);
   border-radius: var(--borderRadius);
   box-shadow: 0 1rem 1rem -0.75rem var(--border);
@@ -97,7 +97,6 @@ label input::placeholder {
   color: var(--borderDark);
 }
 
-/* trick from https://css-tricks.com/snippets/css/password-input-bullet-alternatives/ */
 label input[name="password"] {
   -webkit-text-security: disc;
 }
@@ -172,7 +171,6 @@ input[type="submit"]:active {
   transition: all 0.125s;
 }
 
-/** Checkbox styling */
 .a11y-hidden {
   position: absolute;
   top: -1000em;
@@ -215,179 +213,239 @@ input[type="checkbox"]:checked + label span::after {
   background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
 }
 
-/** PERSON */
-figure {
-  --skinH: 30;
-  --skinS: 100%;
-  --skinL: 87%;
-  --hair: rgb(180,70,60);
-  background: hsl(var(--fgColorH), calc(var(--fgColorS) * 2), 95%);
-  border: 1px solid rgba(0,0,0,0.0625);
-  border-radius: 50%;
-  height: 0;
-  margin: auto auto;
-  margin-bottom: 2rem;
-  order: 1;
-  padding-top: 60%;
-  position: relative;
-  width: 60%;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::-webkit-input-placeholder {
+  color: #56585b;
+}
+
+::-moz-placeholder {
+  color: #56585b;
+}
+
+:-moz-placeholder {
+  color: #56585b;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  background: url('https://source.unsplash.com/G8rRItjrwkA') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #0a0a0b;
   overflow: hidden;
 }
 
-figure div {
+ul, nav{
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1.5rem;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+header {
   position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-figure .skin {
-  background: hsl(var(--skinH), var(--skinS), var(--skinL));
-  box-shadow: inset 0 0 3rem hsl(var(--skinH), var(--skinS), calc(var(--skinL) * 0.95));
-}
-
-figure .head {
-  top: 40%;
-  left: 50%;
-  width: 60%;
-  height: 60%;
-  border-radius: 100%;
-  box-shadow: 0 -0.175rem 0 0.125rem var(--hair);
-}
-
-figure  .ears {
-  top: 47%;
-  left: 50%;
-  white-space: nowrap;
-}
-
-figure .ears::before,
-figure .ears::after {
-  content: "";
-  background: hsl(var(--skinH), var(--skinS), var(--skinL));
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-  display: inline-block;
-  margin: 0 2.1rem;
-}
-
-figure .head .eyes {
-  top: 55%;
-  left: 50%;
-  white-space: nowrap;
-}
-
-@-webkit-keyframes blink {
-  0%, 90%, 100% {
-    height: 10px;
-  }
-  95% {
-    height: 0;
-  }
-}
-
-@keyframes blink {
-  0%, 90%, 100% {
-    height: 10px;
-  }
-  95% {
-    height: 0px;
-  }
-}
-
-figure .head .eyes::before,
-figure .head .eyes::after {
-  content: "";
-  background: var(--borderDarker);
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  margin: 0 0.5rem;
-  -webkit-animation: blink 5s infinite;
-  animation: blink 5s infinite;
-  transition: all 0.15s;
-}
-
-input[name="show-password"]:checked ~ figure .head .eyes::before,
-input[name="show-password"]:checked ~ figure .head .eyes::after {
-  height: 0.125rem;
-  animation: none;
-}
-
-figure .head .mouth {
-  border: 0.125rem solid transparent;
-  border-bottom: 0.125rem solid var(--borderDarker);
-  width: 25%;
-  border-radius: 50%;
-  transition: all 0.5s
-}
-
-form:invalid figure .head .mouth {
-  top: 75%;
-  left: 50%;
-  height: 10%;
-}
-
-form:valid figure .head .mouth {
-  top: 60%;
-  left: 50%;
-  width: 40%;
-  height: 40%;
-}
-
-figure .hair {
-  top: 40%;
-  left: 50%;
-  width: 66.66%;
-  height: 66.66%;
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-figure .hair::before {
-  content: "";
-  display: block;
-  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
   width: 100%;
-  height: 100%;
-  background: var(--hair);
-  border-radius: 50%;
-  top: -60%;
-  left: -50%;
-  box-shadow: 4rem 0 var(--hair);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px 100px 0;
 }
 
-figure .neck {
-  width: 10%;
-  height: 40%;
-  top: 62%;
-  left: 50%;
-  background: hsl(var(--skinH), var(--skinS), calc(var(--skinL) * 0.94));
-  border-radius: 0 0 2rem 2rem;
-  box-shadow: 0 0.25rem var(--border);
+header nav ul {
+  display: flex;
 }
 
-figure .person-body {
-  width: 60%;
-  height: 100%;
-  border-radius: 50%;
-  background: red;
-  left: 50%;
-  top: 126%;
-  background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
+header nav li{
+  margin: 0 15px;
 }
 
-figure .shirt-1,
-figure .shirt-2 {
-  width: 12%;
-  height: 7%;
-  background: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
-  top: 76%;
-  left: 36.5%;
-  transform: skew(-10deg) rotate(15deg)
+header nav li:first-child{
+  margin-left: 0; 
 }
 
-figure .shirt-2 {
-  left: 52.5%;
-  transform: skew(10deg) rotate(-15deg)
+header nav li:last-child{
+  margin-right: 0;  
+}
+
+a.btn {
+  color: #fff;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.5);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a.btn:hover {
+  background: #d73851;
+  border: 1px solid #d73851;
+  color: #fff;
+}
+
+.cover  {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.05)), to(rgba(0,0,0,0)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.flex-form input[type="submit"] {
+  background: #ef3f5a;
+  border: 1px solid #ef3f5a;
+  color: #fff;
+  padding: 0 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.flex-form input[type="submit"]:hover {
+  background: #d73851;
+  border: 1px solid #d73851;
+}
+
+.flex-form {
+  display: -webkit-box;
+  display: flex;
+  z-index: 10;
+  position: relative;
+  width: 500px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.flex-form > * {
+  border: 0;
+  padding: 0 0 0 10px;
+  background: #fff;
+  line-height: 50px;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  flex-basis: 500px;
+}
+
+#madeby {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 25px 100px;
+  color: #fff;
+}
+
+@media all and (max-width:800px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .flex-form {
+    width: 100%;
+  }
+
+  input[type="search"] {
+    flex-basis: 100%;
+  }
+
+  .flex-form > * {
+    font-size: 0.9rem;
+  }
+
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 10px !important;
+  }
+
+  header h2 {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .cover {
+    padding: 20px;
+  }
+
+  #madeby {
+    padding: 30px 20px;
+  }
+}
+
+@media all and (max-width:360px) {
+  header nav li{
+    margin: 0 10px;
+  }
+
+  .flex-form {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  input[type="search"] {
+    flex-basis: 0;
+  }
+
+  label {
+    display: none;
+  }
 }

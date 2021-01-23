@@ -46,7 +46,7 @@ public class CountryControllerTests {
 
 		this.mockMvc.perform(get("/submission").param("country_name", "Andorra"))
 				.andDo(print()).andExpect(status().isOk())
-				.andExpect(jsonPath("$.content").value("TRUE"));
+				.andExpect(jsonPath("$.content.Country").value("True"));
 	}
 
 }
