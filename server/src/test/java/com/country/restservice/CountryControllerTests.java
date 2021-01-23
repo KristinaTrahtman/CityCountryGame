@@ -35,18 +35,79 @@ public class CountryControllerTests {
 	private MockMvc mockMvc;
 
 	@Test
-	public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
-
-		this.mockMvc.perform(get("/submission")).andDo(print()).andExpect(status().isOk())
-				.andExpect(jsonPath("$.content").value("Hello, World!"));
-	}
-
-	@Test
-	public void paramGreetingShouldReturnTailoredMessage() throws Exception {
-
+	public void getCountryTrue() throws Exception {
 		this.mockMvc.perform(get("/submission").param("country_name", "Andorra"))
 				.andDo(print()).andExpect(status().isOk())
 				.andExpect(jsonPath("$.content.Country").value("True"));
+
 	}
+	@Test
+	public void getCountryFalse() throws Exception {
+		this.mockMvc.perform(get("/submission").param("country_name", "Dog"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.Country").value("False"));
+
+	}
+	@Test
+	public void getCityTrue() throws Exception {
+		this.mockMvc.perform(get("/submission").param("city_name", "Tel Aviv"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.City").value("True"));
+
+	}
+	@Test
+	public void getCityFalse() throws Exception {
+		this.mockMvc.perform(get("/submission").param("city_name", "Cat"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.City").value("False"));
+
+	}
+	@Test
+	public void getAnimalTrue() throws Exception {
+		this.mockMvc.perform(get("/submission").param("animal_name", "Puma"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.Animal").value("True"));
+
+	}
+	@Test
+	public void getAnimalFalse() throws Exception {
+		this.mockMvc.perform(get("/submission").param("animal_name", "Hat"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.Animal").value("False"));
+
+	}
+	@Test
+	public void getPlantTrue() throws Exception {
+		this.mockMvc.perform(get("/submission").param("plant_name", "Lily"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.Plant").value("True"));
+
+	}
+	@Test
+	public void getPlantFalse() throws Exception {
+		this.mockMvc.perform(get("/submission").param("plant_name", "Table"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.Plant").value("False"));
+
+	}
+	@Test
+	public void getActorTrue() throws Exception {
+		this.mockMvc.perform(get("/submission").param("actor_name", "Lily James"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.Actor").value("True"));
+
+	}
+	@Test
+	public void getActorFalse() throws Exception {
+		this.mockMvc.perform(get("/submission").param("actor_name", "Train"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpect(jsonPath("$.content.Actor").value("False"));
+
+	}
+
+
+
+
+
 
 }
