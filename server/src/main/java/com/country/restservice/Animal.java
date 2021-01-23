@@ -8,11 +8,12 @@ import org.json.simple.parser.*;
 import org.json.simple.JSONObject;
 
 
-public class Animal {
+public class Animal extends Category {
     private final String animal_name;
 
     public Animal(String animal_name) {
         this.animal_name = animal_name;
+        this.categoryName = "Animal";
     }
 
     public String validate() {
@@ -23,7 +24,7 @@ public class Animal {
             Iterator<JSONObject> iterator = jsonArray.iterator();
 
             while (iterator.hasNext()) {
-                String nextAnimal = String.valueOf(iterator.next());
+                String nextAnimal = String.valueOf(iterator.next().get("name"));
                 if (animal_name.equalsIgnoreCase(nextAnimal)) {
                     return "True";
                 }

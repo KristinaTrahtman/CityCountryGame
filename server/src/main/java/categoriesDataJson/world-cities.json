@@ -100548,44 +100548,38 @@
   {
     "country": "Romania",
     "geonameid": 678301,
-    "name": "Fete\u0219ti-Gar\u0103",
-    "subcountry": "Ialomi\u0163a"
+    "name": "Feteti-Gar",
+    "subcountry": "Ialomia"
   },
   {
     "country": "Romania",
     "geonameid": 678306,
-    "name": "Fete\u015fti",
-    "subcountry": "Ialomi\u0163a"
+    "name": "Fetesti",
+    "subcountry": "Ialomia"
   },
   {
     "country": "Romania",
     "geonameid": 678459,
-    "name": "F\u0103lticeni",
+    "name": "Falticeni",
     "subcountry": "Suceava"
   },
   {
     "country": "Romania",
     "geonameid": 678499,
-    "name": "F\u0103g\u0103ra\u0219",
-    "subcountry": "Bra\u015fov"
+    "name": "Fagaras",
+    "subcountry": "Braov"
   },
   {
     "country": "Romania",
     "geonameid": 678817,
-    "name": "Drobeta-Turnu Severin",
-    "subcountry": "Mehedin\u0163i"
-  },
-  {
-    "country": "Romania",
-    "geonameid": 678978,
-    "name": "Dr\u0103g\u0103\u015fani",
-    "subcountry": "V\u00e2lcea"
+    "name": "Drobeta Turnu Severin",
+    "subcountry": "Mehedini"
   },
   {
     "country": "Romania",
     "geonameid": 679065,
     "name": "Dorohoi",
-    "subcountry": "Boto\u015fani"
+    "subcountry": "Botoani"
   },
   {
     "country": "Romania",
@@ -100602,8 +100596,8 @@
   {
     "country": "Romania",
     "geonameid": 679907,
-    "name": "Curtea de Arge\u015f",
-    "subcountry": "Arge\u015f"
+    "name": "Curtea de Arge",
+    "subcountry": "Arge"
   },
   {
     "country": "Romania",
@@ -100626,20 +100620,20 @@
   {
     "country": "Romania",
     "geonameid": 680963,
-    "name": "Constan\u0163a",
-    "subcountry": "Constan\u021ba"
+    "name": "Constana",
+    "subcountry": "Constana"
   },
   {
     "country": "Romania",
     "geonameid": 681017,
-    "name": "Com\u0103ne\u015fti",
-    "subcountry": "Bac\u0103u"
+    "name": "Comneti",
+    "subcountry": "Bacu"
   },
   {
     "country": "Romania",
     "geonameid": 681179,
     "name": "Codlea",
-    "subcountry": "Bra\u015fov"
+    "subcountry": "Braov"
   },
   {
     "country": "Romania",
@@ -100650,32 +100644,32 @@
   {
     "country": "Romania",
     "geonameid": 681502,
-    "name": "Cisn\u0103die",
+    "name": "Cisndie",
     "subcountry": "Sibiu"
   },
   {
     "country": "Romania",
     "geonameid": 681845,
-    "name": "C\u00e2mpulung Moldovenesc",
+    "name": "Cmpulung Moldovenesc",
     "subcountry": "Suceava"
   },
   {
     "country": "Romania",
     "geonameid": 681862,
-    "name": "C\u00e2mpina",
+    "name": "Cmpina",
     "subcountry": "Prahova"
   },
   {
     "country": "Romania",
     "geonameid": 681865,
-    "name": "C\u00e2mpia Turzii",
+    "name": "Cmpia Turzii",
     "subcountry": "Cluj"
   },
   {
     "country": "Romania",
     "geonameid": 682321,
-    "name": "Cernavod\u0103",
-    "subcountry": "Constan\u021ba"
+    "name": "Cernavod",
+    "subcountry": "Constana"
   },
   {
     "country": "Romania",
@@ -100686,8 +100680,8 @@
   {
     "country": "Romania",
     "geonameid": 682729,
-    "name": "Caransebe\u015f",
-    "subcountry": "Cara\u015f-Severin"
+    "name": "Caransebe",
+    "subcountry": "Cara-Severin"
   },
   {
     "country": "Romania",
@@ -100704,14 +100698,14 @@
   {
     "country": "Romania",
     "geonameid": 683123,
-    "name": "Buz\u0103u",
-    "subcountry": "Buz\u0103u"
+    "name": "Buzu",
+    "subcountry": "Buzu"
   },
   {
     "country": "Romania",
     "geonameid": 683365,
-    "name": "Buhu\u015fi",
-    "subcountry": "Bac\u0103u"
+    "name": "Buhui",
+    "subcountry": "Bacu"
   },
   {
     "country": "Romania",
@@ -100723,7 +100717,7 @@
     "country": "Romania",
     "geonameid": 683506,
     "name": "Bucharest",
-    "subcountry": "Bucure\u015fti"
+    "subcountry": "Bucureti"
   },
   {
     "country": "Romania",
@@ -100734,14 +100728,14 @@
   {
     "country": "Romania",
     "geonameid": 683844,
-    "name": "Bra\u015fov",
-    "subcountry": "Bra\u015fov"
+    "name": "Braov",
+    "subcountry": "Braov"
   },
   {
     "country": "Romania",
     "geonameid": 683902,
-    "name": "Br\u0103ila",
-    "subcountry": "Br\u0103ila"
+    "name": "Brila",
+    "subcountry": "Brila"
   },
   {
     "country": "Romania",
@@ -100752,20 +100746,20 @@
   {
     "country": "Romania",
     "geonameid": 684039,
-    "name": "Boto\u015fani",
-    "subcountry": "Boto\u015fani"
+    "name": "Botoani",
+    "subcountry": "Botoani"
   },
   {
     "country": "Romania",
     "geonameid": 684156,
-    "name": "Bor\u015fa",
-    "subcountry": "Maramure\u015f"
+    "name": "Bora",
+    "subcountry": "Maramure"
   },
   {
     "country": "Romania",
     "geonameid": 684490,
-    "name": "Boc\u015fa",
-    "subcountry": "Cara\u015f-Severin"
+    "name": "Boca",
+    "subcountry": "Cara-Severin"
   },
   {
     "country": "Romania",
@@ -100776,50 +100770,50 @@
   {
     "country": "Romania",
     "geonameid": 684657,
-    "name": "Bistri\u0163a",
-    "subcountry": "Bistri\u0163a-N\u0103s\u0103ud"
+    "name": "Bistria",
+    "subcountry": "Bistria-Nsud"
   },
   {
     "country": "Romania",
     "geonameid": 684802,
-    "name": "B\u00e2rlad",
+    "name": "Brlad",
     "subcountry": "Vaslui"
   },
   {
     "country": "Romania",
     "geonameid": 685586,
-    "name": "Bal\u015f",
+    "name": "Bal",
     "subcountry": "Olt"
   },
   {
     "country": "Romania",
     "geonameid": 685785,
-    "name": "B\u0103ile\u015fti",
+    "name": "Bileti",
     "subcountry": "Dolj"
   },
   {
     "country": "Romania",
     "geonameid": 685811,
-    "name": "B\u0103icoi",
+    "name": "Bicoi",
     "subcountry": "Prahova"
   },
   {
     "country": "Romania",
     "geonameid": 685823,
     "name": "Baia Sprie",
-    "subcountry": "Maramure\u015f"
+    "subcountry": "Maramure"
   },
   {
     "country": "Romania",
     "geonameid": 685826,
     "name": "Baia Mare",
-    "subcountry": "Maramure\u015f"
+    "subcountry": "Maramure"
   },
   {
     "country": "Romania",
     "geonameid": 685948,
-    "name": "Bac\u0103u",
-    "subcountry": "Bac\u0103u"
+    "name": "Bacu",
+    "subcountry": "Bacu"
   },
   {
     "country": "Romania",
@@ -100860,62 +100854,62 @@
   {
     "country": "Romania",
     "geonameid": 6945426,
-    "name": "Pa\u015fcani",
-    "subcountry": "Ia\u015fi"
+    "name": "Pacani",
+    "subcountry": "Iai"
   },
   {
     "country": "Romania",
     "geonameid": 7733099,
     "name": "Mioveni",
-    "subcountry": "Arge\u015f"
+    "subcountry": "Arge"
   },
   {
     "country": "Romania",
     "geonameid": 8436351,
-    "name": "Sighi\u0219oara",
-    "subcountry": "Mure\u015f"
+    "name": "Sighioara",
+    "subcountry": "Mure"
   },
   {
     "country": "Romania",
     "geonameid": 8581467,
     "name": "Slobozia",
-    "subcountry": "Ialomi\u0163a"
+    "subcountry": "Ialomia"
   },
   {
     "country": "Romania",
     "geonameid": 11048317,
     "name": "Sector 1",
-    "subcountry": "Bucure\u015fti"
+    "subcountry": "Bucureti"
   },
   {
     "country": "Romania",
     "geonameid": 11048318,
     "name": "Sector 2",
-    "subcountry": "Bucure\u015fti"
+    "subcountry": "Bucureti"
   },
   {
     "country": "Romania",
     "geonameid": 11048319,
     "name": "Sector 3",
-    "subcountry": "Bucure\u015fti"
+    "subcountry": "Bucureti"
   },
   {
     "country": "Romania",
     "geonameid": 11048320,
     "name": "Sector 4",
-    "subcountry": "Bucure\u015fti"
+    "subcountry": "Bucureti"
   },
   {
     "country": "Romania",
     "geonameid": 11048322,
     "name": "Sector 5",
-    "subcountry": "Bucure\u015fti"
+    "subcountry": "Bucureti"
   },
   {
     "country": "Romania",
     "geonameid": 11048323,
     "name": "Sector 6",
-    "subcountry": "Bucure\u015fti"
+    "subcountry": "Bucureti"
   },
   {
     "country": "Serbia",
@@ -100932,13 +100926,13 @@
   {
     "country": "Serbia",
     "geonameid": 784024,
-    "name": "Zaje\u010dar",
+    "name": "Zajear",
     "subcountry": "Central Serbia"
   },
   {
     "country": "Serbia",
     "geonameid": 784136,
-    "name": "Vr\u0161ac",
+    "name": "Vrac",
     "subcountry": "Vojvodina"
   },
   {
@@ -100962,7 +100956,7 @@
   {
     "country": "Serbia",
     "geonameid": 785615,
-    "name": "Srem\u010dica",
+    "name": "Sremica",
     "subcountry": "Central Serbia"
   },
   {
@@ -100992,7 +100986,7 @@
   {
     "country": "Serbia",
     "geonameid": 786827,
-    "name": "Po\u017earevac",
+    "name": "Poarevac",
     "subcountry": "Central Serbia"
   },
   {
@@ -101004,7 +100998,7 @@
   {
     "country": "Serbia",
     "geonameid": 787237,
-    "name": "Pan\u010devo",
+    "name": "Panevo",
     "subcountry": "Vojvodina"
   },
   {
@@ -101028,7 +101022,7 @@
   {
     "country": "Serbia",
     "geonameid": 787657,
-    "name": "Ni\u0161",
+    "name": "Niu",
     "subcountry": "Central Serbia"
   },
   {
@@ -101052,7 +101046,7 @@
   {
     "country": "Serbia",
     "geonameid": 788975,
-    "name": "Kru\u0161evac",
+    "name": "Kruevac",
     "subcountry": "Central Serbia"
   },
   {
@@ -101082,7 +101076,7 @@
   {
     "country": "Serbia",
     "geonameid": 790015,
-    "name": "In\u0111ija",
+    "name": "Inija",
     "subcountry": "Vojvodina"
   },
   {
@@ -101094,13 +101088,7 @@
   {
     "country": "Serbia",
     "geonameid": 791678,
-    "name": "\u0106uprija",
-    "subcountry": "Central Serbia"
-  },
-  {
-    "country": "Serbia",
-    "geonameid": 792078,
-    "name": "\u010ca\u010dak",
+    "name": "uprija",
     "subcountry": "Central Serbia"
   },
   {
@@ -101118,7 +101106,7 @@
   {
     "country": "Serbia",
     "geonameid": 792814,
-    "name": "Be\u010dej",
+    "name": "becej",
     "subcountry": "Vojvodina"
   },
   {

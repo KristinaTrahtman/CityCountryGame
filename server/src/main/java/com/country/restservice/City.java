@@ -7,11 +7,12 @@ import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
 import java.util.Iterator;
 
-public class City {
+public class City extends Category {
     private final String city_name;
 
     public City(String city_name) {
         this.city_name = city_name;
+        this.categoryName = "City";
     }
 
     public String validate() {

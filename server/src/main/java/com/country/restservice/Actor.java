@@ -7,11 +7,13 @@ import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
 import java.util.Iterator;
 
-public class Actor {
-    private final String actor_name;
+public class Actor extends Category{
+
+   private final String actor_name;
 
     public Actor(String actor_name) {
         this.actor_name = actor_name;
+        this.categoryName = "Actor";
     }
 
     public String validate() {
