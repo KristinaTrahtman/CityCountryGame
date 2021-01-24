@@ -55,32 +55,12 @@ function reloadPage(){
             } 
 
             await api.get('?country_name='+formik.values.country + '&city_name='+formik.values.city + '&animal_name='+formik.values.animal + '&plant_name='+formik.values.plant +'&actor_name='+formik.values.actor).then((response) => {
-                  formik.values.countrySuccess = response.data.content.Country
-                  formik.values.citySuccess = response.data.content.City
-                  formik.values.animalSuccess = response.data.content.Animal
-                  formik.values.plantSuccess = response.data.content.Plant
-                  formik.values.actorSuccess = response.data.content.Actor
+                  errors.country = response.data.content.Country === 'True' ? '' : 'No such Country exists!'
+                  errors.city = response.data.content.City === 'True' ? '' : 'No such City exists!'
+                  errors.animal = response.data.content.Animal === 'True' ? '' : 'No such Animal exists!'
+                  errors.plant = response.data.content.Plant === 'True' ? '' : 'No such Plant exists!'
+                  errors.actor = response.data.content.Actor === 'True' ? '' : 'No such Actor exists!'
             });
-        
-            if(formik.values.countrySuccess !== 'True'){ 
-                  errors.country = 'No such country exists!'    
-            }   
-
-            if(formik.values.citySuccess !== 'True'){  
-                  errors.city = 'No such city exists!'    
-            }
-
-            if(formik.values.animalSuccess !== 'True'){                
-                  errors.animal = 'No such Animal exists!'    
-            }
-
-            if(formik.values.plantSuccess !== 'True'){        
-                  errors.plant = 'No such Plant exists!'    
-            }
-
-            if(formik.values.actorSuccess !== 'True'){       
-                  errors.actor = 'No such Actor exists!'    
-            }
 
             if(Object.entries(errors).length === 0){
                   alert('Wow you are Amazing!!!!');
@@ -95,20 +75,11 @@ function reloadPage(){
             city: '', 
             animal: '',
             plant: '',
-            actor: '',
-         
-            citySuccess: 'false',
-            countrySuccess: 'false',
-            animalSuccess: 'false',
-            plantSuccess: 'false',
-            actorSuccess: 'false'
-
-            },
-           
+            actor: ''
+            },       
             validateOnChange: false,
             validateOnBlur: false,
-            validate
-            
+            validate           
       })
 
       return (
