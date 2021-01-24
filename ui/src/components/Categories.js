@@ -19,38 +19,24 @@ function reloadPage(){
       window.location.reload(false);
 }
 
+function capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
  function Categories(){
       const letterContext = useContext(LetterContext)
-     
+      const categoriesList = ["country", "city", "animal","plant", "actor"]
        const validate = async(response) => {
             let errors ={} 
             let letterFail = false
-
-            if(letterContext.toLowerCase() !==   formik.values.city.charAt(0).toLowerCase()){
-                  errors.city = 'Wrong Letter, please be cuation!' 
-                  letterFail = true
-            } 
-
-            if(letterContext.toLowerCase() !==   formik.values.country.charAt(0).toLowerCase()){ 
-                  errors.country = 'Wrong Letter, please be cuation!' 
-                  letterFail = true
-            } 
-            if(letterContext.toLowerCase() !==   formik.values.animal.charAt(0).toLowerCase()){ 
-                  errors.animal = 'Wrong Letter, please be cuation!' 
-                  letterFail = true
-            } 
-            if(letterContext.toLowerCase() !==   formik.values.plant.charAt(0).toLowerCase()){ 
-                  errors.plant = 'Wrong Letter, please be cuation!' 
-                  letterFail = true
-            } 
-            if(letterContext.toLowerCase() !==   formik.values.actor.charAt(0).toLowerCase()){ 
-                  errors.actor = 'Wrong Letter, please be cuation!' 
-                  letterFail = true
-            } 
-
-
+            
+            for (let category of categoriesList){
+                  if(letterContext.toLowerCase() !== formik.values[category].charAt(0).toLowerCase()){ 
+                        errors[category] = 'Wrong Letter, please be cuation!' 
+                        letterFail = true 
+                  }
+            }
             if(letterFail){
-                  console.log(errors)
                   return errors
             } 
 
@@ -62,7 +48,7 @@ function reloadPage(){
                   errors.actor = response.data.content.Actor === 'True' ? '' : 'No such Actor exists!'
             });
 
-            if(Object.entries(errors).length === 0){
+            if(Object.values(errors).join("").length === 0){
                   alert('Wow you are Amazing!!!!');
                   setTimeout(reloadPage, 100)                
             }
@@ -82,29 +68,21 @@ function reloadPage(){
             validate           
       })
 
+      let fields = []
+
+      for (let category of categoriesList){
+            fields.push(
+                  <label htmlFor = {category} key={category}>{capitalizeFirstLetter(category)}<br/>
+                  <input type= 'text' id={category} country={category} onChange={formik.handleChange} value={formik.values[category]} key={category}/>
+                  {formik.errors[category] ? <div>{formik.errors[category]}</div>: null}
+                  </label>
+            )
+      }
+
       return (
       <div className="login-box">      
             <form onSubmit={formik.handleSubmit}>
-                  <label htmlFor = 'country'>Country<br/>
-                  <input type= 'text' id='country' country='country' onChange={formik.handleChange} value={formik.values.country}/>
-                  {formik.errors.country ? <div>{formik.errors.country}</div>: null}
-                  </label>
-                  <label htmlFor = 'city'>City<br/>
-                  <input type= 'text' id='city' city='city' onChange={formik.handleChange} value={formik.values.city}/>
-                  {formik.errors.city ? <div>{formik.errors.city}</div>: null}
-                  </label>
-                  <label htmlFor = 'animal'>Animal<br/>
-                  <input type= 'text' id='animal' animal='animal' onChange={formik.handleChange} value={formik.values.animal}/>
-                  {formik.errors.animal ? <div>{formik.errors.animal}</div>: null}
-                  </label>
-                  <label htmlFor = 'plant'>Plant<br/>
-                  <input type= 'text' id='plant' plant='plant' onChange={formik.handleChange} value={formik.values.plant}/>
-                  {formik.errors.plant ? <div>{formik.errors.plant}</div>: null}
-                  </label>
-                  <label htmlFor = 'actor'>Actor<br/>
-                  <input type= 'text' id='actor' actor='actor' onChange={formik.handleChange} value={formik.values.actor}/>
-                  {formik.errors.actor ? <div>{formik.errors.actor}</div>: null}
-                  </label>
+                  {fields}
                   <input type="submit" value="Submit"/>
             </form>
       </div>
