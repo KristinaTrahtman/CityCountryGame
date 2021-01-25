@@ -49,6 +49,7 @@ const Clock = (props) => {
         { seconds === 0
             ?  null
             : <h1>time left: 00:{seconds < 10 ?  `0${seconds}` : seconds}</h1> 
+            /* R.R this can be also written without the if as  `0${seconds}`.slice(-2) */
         }
         </div>
     )

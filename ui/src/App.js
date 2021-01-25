@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <GameTitle />
+      {/* R.R  not sure this is the best name. a would think this only handles the generate letter and not also all the Categories... */}
       <GenerateRandomLetter />
     </div>
   );  

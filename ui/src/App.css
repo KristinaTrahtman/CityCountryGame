@@ -1,3 +1,7 @@
+/* R.R I didn't really go over all the different style properties but just keep in mind that 
+if your project gets bigger this file will grow, so sometimes it's better to separate it into smaller files, easier to maintain  
+here I would leave anything that's global (which in your case might be all of the below  */
+
 /* html, body {
   align-items: center;
   background: #9ba9c4;
