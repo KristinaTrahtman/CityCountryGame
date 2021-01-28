@@ -18,9 +18,9 @@ function GenerateRandomLetter() {
 
       const formik = useFormik({
         initialValues: { // R.R add some intentation in the next lines
-        alphabet: '',  // R.R the name here is confusing, it's not the alphabet but only a random chosen letter... 
-        reset: false,
-        start: false
+          alphabet: '',  // R.R the name here is confusing, it's not the alphabet but only a random chosen letter... 
+          reset: false,
+          start: false
         },
         onSubmit: async(values) => {
           formik.values.alphabet = alphabet[Math.floor(Math.random() * alphabet.length)]
@@ -33,7 +33,7 @@ function GenerateRandomLetter() {
       <div className="cover">
         <ResetContext.Provider value={formik.values.reset}>
           {/* R.R just like you pass the initialSeconds as props you can also pass the reset value*/}
-          <Clock initialSeconds={formik.values.start ? 59 : 0}/> 
+          <Clock initialSeconds={formik.values.start ? 59 : 0}/>
         </ResetContext.Provider>
         <form onSubmit={formik.handleSubmit}>
           <label htmlFor = 'Start'>{'Your Letter is: ' + formik.values.alphabet}<br/>

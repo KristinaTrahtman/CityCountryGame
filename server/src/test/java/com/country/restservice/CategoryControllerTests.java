@@ -29,7 +29,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class CountryControllerTests {
+public class CategoryControllerTests {
 
 	@Autowired
 	private MockMvc mockMvc;

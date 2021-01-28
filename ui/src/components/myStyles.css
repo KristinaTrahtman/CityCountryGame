@@ -1,8 +1,21 @@
 .primary {
-      color: rgb(138, 38, 38);
+      color: rgb(19, 192, 163);
       /* font-family: 'Lato', sans-serif; */
       font-family: 'Brush Script MT', cursive;
       font-weight: bold;
-      font-size: 8rem;
+      font-size: 9rem;
       text-align: center;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+.timer {
+      color: rgb(19, 192, 134);
+      /* font-family: 'Lato', sans-serif; */
+      font-family: 'Brush Script MT', cursive;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      display: flex;
 }

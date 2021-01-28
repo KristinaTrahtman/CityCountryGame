@@ -1,4 +1,4 @@
-/* R.R I didn't really go over all the different style properties but just keep in mind that 
+/* /* /* R.R I didn't really go over all the different style properties but just keep in mind that 
 if your project gets bigger this file will grow, so sometimes it's better to separate it into smaller files, easier to maintain  
 here I would leave anything that's global (which in your case might be all of the below  */
 
@@ -31,18 +31,18 @@ form {
   --shadeNormal: 0.5;
   --borderRadius: 0.125rem;
   --highlight: #cce016;
-  background: rgb(255, 255, 255);
+  background: rgb(176, 228, 228);
   border: 1px solid var(--border);
   border-radius: var(--borderRadius);
   box-shadow: 0 1rem 1rem -0.75rem var(--border);
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  position: relative;
-  overflow: hidden;
+  flex-direction: row;
+  padding: 3rem;
+  /* position: relative; */
+  /* overflow: hidden; */
 }
 
-form .email, form .email a {
+/* form .email, form .email a {
   color: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
   font-size: 0.825rem;
   order: 4;
@@ -51,18 +51,19 @@ form .email, form .email a {
   outline: 1px dashed transparent;
   outline-offset: 2px;
   display: inline;
-}
+  float: left
+} */
 
-form a:hover {
+/* form a:hover {
   color: hsl(var(--fgColorH), var(--fgColorS), calc(var(--fgColorL) * 0.85));
   transition: color 0.25s;
-}
+} */
 
-form a:focus {
+/* form a:focus {
   color: hsl(var(--fgColorH), var(--fgColorS), calc(var(--fgColorL) * 0.85));
   outline: 1px dashed hsl(var(--fgColorH), calc(var(--fgColorS) * 2), calc(var(--fgColorL) * 1.15));
   outline-offset: 2px;
-}
+} */
 
 form > div {
   order: 4;
@@ -101,13 +102,13 @@ label input::placeholder {
   color: var(--borderDark);
 }
 
-label input[name="password"] {
+/* label input[name="password"] {
   -webkit-text-security: disc;
-}
+} */
 
-input[name="show-password"]:checked ~ div label input[name="password"] {
+/* input[name="show-password"]:checked ~ div label input[name="password"] {
   -webkit-text-security: none;
-}
+} */
 
 label:hover span {
   color: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
@@ -129,7 +130,7 @@ input.text:active + span {
   color:  hsl(var(--fgColorH), calc(var(--fgColorS) * 2), calc(var(--fgColorL) * 1.15));
 }
 
-input {
+/* input {
   border: 1px solid var(--border);
   border-radius: var(--borderRadius);
   box-sizing: border-box;
@@ -141,7 +142,7 @@ input {
   padding: 0.25rem 0.5rem;
   width: 15rem;
   transition: all 0.25s;
-}
+} */
 
 input[type="submit"] {
   color: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
@@ -161,7 +162,7 @@ input[type="submit"]:focus {
   outline: 1px dashed hsl(var(--fgColorH), calc(var(--fgColorS) * 2), calc(var(--fgColorL) * 1.15));
   outline-offset: 2px;
 }
-
+/* 
 input[type="submit"]:focus {
   background: hsl(var(--fgColorH), var(--fgColorS), calc(var(--fgColorL) * 0.85));
 }
@@ -173,7 +174,7 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
   background: hsl(var(--fgColorH), calc(var(--fgColorS) * 2), calc(var(--fgColorL) * 1.15));
   transition: all 0.125s;
-}
+} */
 
 .a11y-hidden {
   position: absolute;
@@ -246,7 +247,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  background: url('https://source.unsplash.com/G8rRItjrwkA') no-repeat center center fixed;
+  background: url('wallpaper2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
