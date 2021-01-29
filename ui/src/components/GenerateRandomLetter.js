@@ -7,7 +7,6 @@ import Categories from "./Categories";
 // In a typical React application, data is passed top-down (parent to child) via props
 // context provides a way to share values between components without having to explicitly pass a prop through every level of the tree
 // you can read about it here: https://reactjs.org/docs/context.html
-export const LetterContext = React.createContext();
 
 function GenerateRandomLetter() {
   //No X letter - there are no countries or animals that start with that letter.
@@ -37,9 +36,7 @@ function GenerateRandomLetter() {
         <input type="submit" value="Press Here To Generate A Letter" />
       </form>
       {!formik.values.start ? null : (
-        <LetterContext.Provider value={formik.values.letter}>
-          <Categories />
-        </LetterContext.Provider>
+          <Categories letter={formik.values.letter} key={formik.values.letter} />
       )}
     </div>
   );

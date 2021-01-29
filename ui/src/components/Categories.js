@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useFormik } from "formik";
-import { LetterContext } from "./GenerateRandomLetter";
 import api from "../utils/api";
 import reloadPage from "../utils/reload";
 
@@ -17,15 +16,15 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function Categories() {
-  const letterContext = useContext(LetterContext);
+function Categories(props) {
+  const { letter } = props;
   const categoriesList = ["country", "city", "animal", "plant", "actor"];
   const validate = async () => {
     let errors = {};
     let letterFail = false;
     for (let category of categoriesList) {
       if (
-        letterContext.toLowerCase() !==
+        letter.toLowerCase() !==
         formik.values[category].charAt(0).toLowerCase()
       ) {
         errors[category] = "Wrong Letter, please be cuation!";
