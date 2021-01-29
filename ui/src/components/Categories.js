@@ -24,8 +24,7 @@ function Categories(props) {
     let letterFail = false;
     for (let category of categoriesList) {
       if (
-        letter.toLowerCase() !==
-        formik.values[category].charAt(0).toLowerCase()
+        letter.toLowerCase() !== formik.values[category].charAt(0).toLowerCase()
       ) {
         errors[category] = "Wrong Letter, please be cuation!";
         letterFail = true;
@@ -45,7 +44,7 @@ function Categories(props) {
 
     for (let category of categoriesList) {
       errors[category] =
-        apiResponse.data.content[capitalizeFirstLetter(category)] === "True"
+        apiResponse.data.content[capitalizeFirstLetter(category)]
           ? ""
           : "No such " + capitalizeFirstLetter(category) + " exists!";
     }

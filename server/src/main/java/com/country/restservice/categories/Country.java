@@ -1,25 +1,24 @@
-package com.country.restservice;
+package com.country.restservice.categories;
 
 import java.util.Locale;
 
 public class Country extends Category {
-    private final String userCategoryAnswer;
 
     public Country(String userCategoryAnswer) {
-        this.userCategoryAnswer = userCategoryAnswer;
+        super(userCategoryAnswer);
         this.categoryName = "Country";
     }
 
-    public String validate() {
+    public boolean validate() {
         String[] locales = Locale.getISOCountries();
 
         for (String countryCode : locales) {
             Locale obj = new Locale("", countryCode);
             if (userCategoryAnswer.equalsIgnoreCase(obj.getDisplayCountry())) {
-                return "True";
+                return true;
             }
         }
-        return "False";
+        return false;
     }
 }
 
