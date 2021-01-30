@@ -1,6 +1,5 @@
 .primary {
       color: rgb(8, 8, 8);
-      /* font-family: 'Lato', sans-serif; */
       font-family: 'Courier' , 'monospace';
       font-weight: bold;
       font-size: 7rem;
@@ -15,5 +14,4 @@
       font-family: 'Courier' ,'monospace';
       font-weight: bold;
       font-size: 2rem;
-      /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }

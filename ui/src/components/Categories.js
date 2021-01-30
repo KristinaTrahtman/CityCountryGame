@@ -93,7 +93,12 @@ function Categories(props) {
           </label>
         ))}
         <br />
-        <input type="submit" value="Submit" disabled={!start} className="btn btn-white btn-animation-1" />
+        <input
+          type="submit"
+          value="Submit"
+          disabled={!start}
+          className="btn btn-white btn-animation-1"
+        />
       </form>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import Clock from "./Clock";
-import Categories from "./Categories"; 
+import Categories from "./Categories";
 import "../css/button.css";
 
 function GameAggregator() {
@@ -32,7 +32,11 @@ function GameAggregator() {
           {"Your Letter is: " + formik.values.letter}
         </label>
         <br />
-        <input type="submit" value="Press Here To Generate A Letter" className="btn btn-white btn-animation-1"/>
+        <input
+          type="submit"
+          value="Press Here To Generate A Letter"
+          className="btn btn-white btn-animation-1"
+        />
       </form>
       <Categories
         letter={formik.values.letter}
