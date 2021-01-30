@@ -1,92 +1,102 @@
-import React, { useContext } from 'react'
-import { useFormik } from 'formik'
-import { LetterContext}  from  './GenerateRandomLetter'
-import axios from 'axios'
+import React from "react";
+import { useFormik } from "formik";
+import api from "../utils/api";
+import reloadPage from "../utils/reload";
 
 /*
-Categories is a child of generateRandomLetter.
-It recieves a letter from generateRandomLetter then, after the submission of the user, it validates the first char of every category that the user has entered. 
+Categories is a child of GameAggregator.
+It recieves a letter from GameAggregator then, after the submission of the user, it validates the first char of every category that the user has entered. 
 If the first char in any category is different from the random letter it returns an error message to the UI for each category which has a difference. 
 Else, it sends a request to the java API server and each category is validated differently in the server. 
 If any of the fields is incorrect, an error message will be displayed under the field. 
 Else, a succsess message will alert the user and the page will be reloaded. 
 */
-const api = axios.create({
-      baseURL: 'http://localhost:8080/submission'
-})
-
-function reloadPage(){ 
-      window.location.reload(false);
-}
 
 function capitalizeFirstLetter(string) {
-      return string.charAt(0).toUpperCase() + string.slice(1);
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
- function Categories(){
-      const letterContext = useContext(LetterContext)
-      const categoriesList = ["country", "city", "animal","plant", "actor"]
-       const validate = async(response) => {
-            let errors ={} 
-            let letterFail = false
-            
-            for (let category of categoriesList){
-                  if(letterContext.toLowerCase() !== formik.values[category].charAt(0).toLowerCase()){ 
-                        errors[category] = 'Wrong Letter, please be cuation!' 
-                        letterFail = true 
-                  }
-            }
-            if(letterFail){
-                  return errors
-            } 
-
-            await api.get('?country_name='+formik.values.country + '&city_name='+formik.values.city + '&animal_name='+formik.values.animal + '&plant_name='+formik.values.plant +'&actor_name='+formik.values.actor).then((response) => {
-                  errors.country = response.data.content.Country === 'True' ? '' : 'No such Country exists!'
-                  errors.city = response.data.content.City === 'True' ? '' : 'No such City exists!'
-                  errors.animal = response.data.content.Animal === 'True' ? '' : 'No such Animal exists!'
-                  errors.plant = response.data.content.Plant === 'True' ? '' : 'No such Plant exists!'
-                  errors.actor = response.data.content.Actor === 'True' ? '' : 'No such Actor exists!'
-            });
-
-            if(Object.values(errors).join("").length === 0){
-                  alert('Wow you are Amazing!!!!');
-                  setTimeout(reloadPage, 100)                
-            }
-            return errors
+function Categories(props) {
+  const { letter, start } = props;
+  const categoriesList = ["country", "city", "animal", "plant", "actor"];
+  const validate = async () => {
+    let errors = {};
+    let letterFail = false;
+    for (let category of categoriesList) {
+      if (
+        letter.toLowerCase() !== formik.values[category].charAt(0).toLowerCase()
+      ) {
+        errors[category] = "Wrong Letter";
+        letterFail = true;
       }
+    }
+    if (letterFail) {
+      return errors;
+    }
 
-      const formik = useFormik({
-            initialValues: {
-            country: '',
-            city: '', 
-            animal: '',
-            plant: '',
-            actor: ''
-            },       
-            validateOnChange: false,
-            validateOnBlur: false,
-            validate           
-      })
+    let url = "";
+    for (let category of categoriesList) {
+      url += url ? "&" : "?";
+      url += category + "_name=" + formik.values[category];
+    }
 
-      let fields = []
+    let apiResponse = await api.get(url);
 
-      for (let category of categoriesList){
-            fields.push(
-                  <label htmlFor = {category} key={category}>{capitalizeFirstLetter(category)}<br/>
-                  <input type= 'text' id={category} country={category} onChange={formik.handleChange} value={formik.values[category]} key={category}/>
-                  {formik.errors[category] ? <div>{formik.errors[category]}</div>: null}
-                  </label>
-            )
-      }
+    for (let category of categoriesList) {
+      errors[category] = apiResponse.data.content[
+        capitalizeFirstLetter(category)
+      ]
+        ? ""
+        : "No such " + capitalizeFirstLetter(category) + " exists!";
+    }
 
-      return (
-      <div className="login-box">      
-            <form onSubmit={formik.handleSubmit}>
-                  {fields}
-                  <input type="submit" value="Submit"/>
-            </form>
-      </div>
-      )
+    if (Object.values(errors).join("").length === 0) {
+      alert("Wow you are Amazing!!!!");
+      setTimeout(reloadPage, 100);
+    }
+    return errors;
+  };
+
+  const formik = useFormik({
+    initialValues: {
+      country: "",
+      city: "",
+      animal: "",
+      plant: "",
+      actor: "",
+    },
+    validateOnChange: false,
+    validateOnBlur: false,
+    validate,
+  });
+
+  return (
+    <div>
+      <form onSubmit={formik.handleSubmit}>
+        {categoriesList.map((category) => (
+          <label htmlFor={category} key={category}>
+            {capitalizeFirstLetter(category)}
+            <input
+              type="text"
+              id={category}
+              onChange={formik.handleChange}
+              value={formik.values[category]}
+              key={category}
+              disabled={!start}
+              required
+            />
+            {formik.errors[category] ? (
+              <div className="label-error">{formik.errors[category]}</div>
+            ) : (
+              <div>&nbsp;</div>
+            )}
+          </label>
+        ))}
+        <br />
+        <input type="submit" value="Submit" disabled={!start} className="btn btn-white btn-animation-1" />
+      </form>
+    </div>
+  );
 }
 
-export default Categories
+export default Categories;

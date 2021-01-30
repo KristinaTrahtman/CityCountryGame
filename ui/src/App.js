@@ -1,18 +1,16 @@
-import React from 'react';
-import './App.css';
-import GameTitle from './components/GameTitle'
-import GenerateRandomLetter from './components/GenerateRandomLetter'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import React from "react";
+import "./css/App.css";
+import GameTitle from "./components/GameTitle";
+import GameAggregator from "./components/GameAggregator";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <GameTitle />
-      <GenerateRandomLetter />
+      <GameAggregator />
     </div>
-  );  
+  );
 }
 
 export default App;

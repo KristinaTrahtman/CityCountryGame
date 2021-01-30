@@ -1,0 +1,66 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  background: url('../wallpaper2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #0a0a0b;
+  overflow: hidden;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 10px 5px;
+  border: 2px solid rgb(36, 174, 192);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: #191a19;
+  color: rgb(210, 240, 128);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  max-width: 300px;
+  max-height: 50px;
+}
+
+input[type=submit]:hover {
+  background-color: #b1af45;
+}
+
+div {
+  border-radius: 2px;
+  padding: 5px;
+}
+
+form {
+  --border: rgba(0, 0, 0, 0.125);
+  border-radius: var(--borderRadius);
+  box-shadow: 4 1rem 1rem -0.75rem var(--border);
+  padding: 1rem;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px 5px;
+  font-family: 'Courier';
+}
+
+.label-letter {
+  font-size: 2rem;
+  text-shadow: -1px -1px 0 rgb(200, 255, 0), 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.label-error {
+  color: rgb(255, 20, 20);
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
