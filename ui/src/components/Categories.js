@@ -86,14 +86,14 @@ function Categories(props) {
               required
             />
             {formik.errors[category] ? (
-              <div>{formik.errors[category]}</div>
+              <div className="label-error">{formik.errors[category]}</div>
             ) : (
               <div>&nbsp;</div>
             )}
           </label>
         ))}
         <br />
-        <input type="submit" value="Submit" disabled={!start} />
+        <input type="submit" value="Submit" disabled={!start} className="btn btn-white btn-animation-1" />
       </form>
     </div>
   );
