@@ -56,6 +56,13 @@
     "objectID": "551486370"
   },
   {
+    "name": "Jason Momoa",
+    "rating": 1719,
+    "image_path": "/PhWiWgasncGWD9LdbsGcmxkV4r.jpg",
+    "alternative_name": null,
+    "objectID": "551486370"
+  },
+  {
     "name": "Emilia Clarke",
     "rating": 1585,
     "image_path": "/xMIjXRUkxpQs2o5VI3Om3yn6hNV.jpg",
@@ -2516,6 +2523,13 @@
   },
   {
     "name": "Jim Broadbent",
+    "rating": 509,
+    "image_path": "/atBa5ONgpQtbiXCIZrlNOKEFgA5.jpg",
+    "alternative_name": "James Broadbent",
+    "objectID": "551489870"
+  },
+  {
+    "name": "Jim Carrey",
     "rating": 509,
     "image_path": "/atBa5ONgpQtbiXCIZrlNOKEFgA5.jpg",
     "alternative_name": "James Broadbent",

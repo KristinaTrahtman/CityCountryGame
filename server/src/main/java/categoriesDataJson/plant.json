@@ -1164,13 +1164,17 @@
       "species": "Hedera spp."
     },
     {
-      "name": "Jack-by-the-hedge",
+      "name": "Jack by the hedge",
       "species": "Alliaria petiolata"
     },
     {
-      "name": "Jack-in-the-bush",
+      "name": "Jack in the bush",
       "species": "Alliaria petiolata"
     },
+   {
+     "name": "Jackfruit",
+     "species": "Alliaria petiolata"
+   },
     {
       "name": "Juneberry",
       "species": "Amelanchier canadensis"
