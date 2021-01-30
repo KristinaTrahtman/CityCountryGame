@@ -1,5 +1,7 @@
 # Getting Started with City Country App
 
+![Sample App Image](./image/gameImage.png)
+
 ## Start Java Server
 
 open the project from pom.xml located in server directory. 
