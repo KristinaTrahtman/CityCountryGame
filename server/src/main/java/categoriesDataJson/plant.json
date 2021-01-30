@@ -979,6 +979,10 @@
       "name": "Grapevine",
       "species": "Vitis"
     },
+   {
+     "name": "Grape",
+     "species": "Vitis"
+   },
     {
       "name": "Groundberry",
       "species": "Rubus hispidus"
@@ -1295,6 +1299,10 @@
       "name": "Water maple",
       "species": "Acer saccharinum"
     },
+   {
+     "name": "Watermelon",
+     "species": "Acer saccharinum"
+   },
     {
       "name": "White maple",
       "species": "Acer saccharinum"
@@ -2208,6 +2216,10 @@
       "name": "Annual sow thistle",
       "species": "Sonchus oleraceus"
     },
+   {
+     "name": "ananas",
+     "species": "Bromeliaceae"
+   },
     {
       "name": "California thistle",
       "species": "Cirsium arvense"
@@ -2488,6 +2500,14 @@
       "name": "Evergreen winterberry",
       "species": "Ilex glabra"
     },
+   {
+     "name": "Eggplant",
+     "species": "Ilex glabra"
+   },
+   {
+     "name": "Elderberry",
+     "species": "Ilex glabra"
+   },
     {
       "name": "Virginia winterberry",
       "species": "Ilex verticillata"
