@@ -4,8 +4,8 @@ import api from "../utils/api";
 import reloadPage from "../utils/reload";
 
 /*
-Categories is a child of generateRandomLetter.
-It recieves a letter from generateRandomLetter then, after the submission of the user, it validates the first char of every category that the user has entered. 
+Categories is a child of GameAggregator.
+It recieves a letter from GameAggregator then, after the submission of the user, it validates the first char of every category that the user has entered. 
 If the first char in any category is different from the random letter it returns an error message to the UI for each category which has a difference. 
 Else, it sends a request to the java API server and each category is validated differently in the server. 
 If any of the fields is incorrect, an error message will be displayed under the field. 
@@ -17,7 +17,7 @@ function capitalizeFirstLetter(string) {
 }
 
 function Categories(props) {
-  const { letter } = props;
+  const { letter, start } = props;
   const categoriesList = ["country", "city", "animal", "plant", "actor"];
   const validate = async () => {
     let errors = {};
@@ -26,7 +26,7 @@ function Categories(props) {
       if (
         letter.toLowerCase() !== formik.values[category].charAt(0).toLowerCase()
       ) {
-        errors[category] = "Wrong Letter, please be cuation!";
+        errors[category] = "Wrong Letter";
         letterFail = true;
       }
     }
@@ -43,10 +43,11 @@ function Categories(props) {
     let apiResponse = await api.get(url);
 
     for (let category of categoriesList) {
-      errors[category] =
-        apiResponse.data.content[capitalizeFirstLetter(category)]
-          ? ""
-          : "No such " + capitalizeFirstLetter(category) + " exists!";
+      errors[category] = apiResponse.data.content[
+        capitalizeFirstLetter(category)
+      ]
+        ? ""
+        : "No such " + capitalizeFirstLetter(category) + " exists!";
     }
 
     if (Object.values(errors).join("").length === 0) {
@@ -70,25 +71,29 @@ function Categories(props) {
   });
 
   return (
-    <div className="login-box">
+    <div>
       <form onSubmit={formik.handleSubmit}>
         {categoriesList.map((category) => (
           <label htmlFor={category} key={category}>
             {capitalizeFirstLetter(category)}
-            <br />
             <input
               type="text"
               id={category}
               onChange={formik.handleChange}
               value={formik.values[category]}
               key={category}
+              disabled={!start}
+              required
             />
             {formik.errors[category] ? (
               <div>{formik.errors[category]}</div>
-            ) : null}
+            ) : (
+              <div>&nbsp;</div>
+            )}
           </label>
         ))}
-        <input type="submit" value="Submit" />
+        <br />
+        <input type="submit" value="Submit" disabled={!start} />
       </form>
     </div>
   );

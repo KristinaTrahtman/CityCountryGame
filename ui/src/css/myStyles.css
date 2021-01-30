@@ -1,21 +1,19 @@
 .primary {
-      color: rgb(19, 192, 163);
+      color: rgb(20, 105, 91);
       /* font-family: 'Lato', sans-serif; */
       font-family: 'Brush Script MT', cursive;
       font-weight: bold;
-      font-size: 9rem;
+      font-size: 7rem;
       text-align: center;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 
 .timer {
-      color: rgb(19, 192, 134);
+      color: rgb(19, 88, 192);
       /* font-family: 'Lato', sans-serif; */
-      font-family: 'Brush Script MT', cursive;
+      font-family: 'Blippo';
       font-weight: bold;
-      font-size: 3rem;
-      text-align: center;
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-      display: flex;
+      font-size: 2rem;
+      /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }

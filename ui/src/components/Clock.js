@@ -3,15 +3,15 @@ import { useState, useEffect } from "react";
 import reloadPage from "../utils/reload";
 
 /*
-Clock is a child of generateRandomLetter. 
+Clock is a child of GameAggregator. 
 The timer starts only when the initial seconds is set to higher value than zero. 
 */
 
 const Clock = (props) => {
-  const {initialSeconds = 0, resetTime = false} = props;
+  const { initialSeconds = 0, resetTime = false } = props;
   const [seconds, setSeconds] = useState(initialSeconds);
   const [clockStarted, setClockStarted] = useState(false);
-  const [reset, setReset ] =  useState(false);
+  const [reset, setReset] = useState(false);
 
   useEffect(() => {
     let myInterval = setInterval(() => {
@@ -26,10 +26,10 @@ const Clock = (props) => {
         }
         clearInterval(myInterval);
       }
-      if(reset !== resetTime){ 
-        setReset(resetTime)
-        setSeconds(initialSeconds)
-      } 
+      if (reset !== resetTime) {
+        setReset(resetTime);
+        setSeconds(initialSeconds);
+      }
     }, 1000);
     return () => {
       clearInterval(myInterval);
@@ -38,11 +38,7 @@ const Clock = (props) => {
 
   return (
     <div>
-      {seconds === 0 ? null : (
-        <h1 className="timer">
-          Time left to play: 00:{`0${seconds}`.slice(-2)}
-        </h1>
-      )}
+      <h1 className="timer">Time left to play: 00:{`0${seconds}`.slice(-2)}</h1>
     </div>
   );
 };
