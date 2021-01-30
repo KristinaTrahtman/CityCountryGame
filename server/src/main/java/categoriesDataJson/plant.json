@@ -103,6 +103,10 @@
       "name": "Maple ash",
       "species": "Acer negundo"
     },
+   {
+     "name": "Melon",
+     "species": "Acer negundo"
+   },
     {
       "name": "Red ash",
       "species": "Fraxinus pennsylvanica"
@@ -1563,6 +1567,10 @@
       "name": "Olive",
       "species": "Olea europaea"
     },
+   {
+     "name": "Oak",
+     "species": "Olea europaea"
+   },
     {
       "name": "Onion",
       "species": "Allium"
@@ -1615,6 +1623,10 @@
       "name": "Parsley",
       "species": "Petroselinum crispum"
     },
+   {
+     "name": "Pistache",
+     "species": "Petroselinum crispum"
+   },
     {
       "name": "Parsnip",
       "species": "Pastinaca sativa, Daucus carota"
@@ -1655,6 +1667,10 @@
       "name": "Pepper root",
       "species": "Cardamine concatenata"
     },
+   {
+     "name": "Pepper",
+     "species": "Cardamine concatenata"
+   },
     {
       "name": "Pigeon berry",
       "species": "Phytolacca americana"
@@ -1715,8 +1731,12 @@
       "name": "Poisonberry",
       "species": "Solanum dulcamara"
     },
+   {
+     "name": "Poisonberry",
+     "species": "Solanum dulcamara"
+   },
     {
-      "name": "Poisonflower",
+      "name": "pomegranate",
       "species": "Solanum dulcamara"
     },
     {
@@ -1759,6 +1779,10 @@
       "name": "Poppy",
       "species": "Papaveraceae"
     },
+   {
+     "name": "Papaya",
+     "species": "Papaveraceae"
+   },
     {
       "name": "Possumhaw",
       "species": "Ilex decidua"
@@ -1771,6 +1795,10 @@
       "name": "Pudina",
       "species": "Mentha indica"
     },
+   {
+     "name": "Pumpkin",
+     "species": "Mentha indica"
+   },
     {
       "name": "Queen Anne's lace",
       "species": "Daucus carota, Anthriscus sylvestris"
@@ -2272,6 +2300,18 @@
       "name": "Prickly thistle",
       "species": "Cirsium arvense"
     },
+   {
+     "name": "Pecan",
+     "species": "Cirsium arvense"
+   },
+   {
+     "name": "Primrose",
+     "species": "Cirsium arvense"
+   },
+   {
+     "name": "Plum",
+     "species": "Cirsium arvense"
+   },
     {
       "name": "Sharp-fringed sow Thistle",
       "species": "Sonchus asper"
