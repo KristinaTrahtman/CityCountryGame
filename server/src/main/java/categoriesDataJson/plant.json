@@ -496,7 +496,7 @@
       "species": "Dendranthema grandiflora, Chrysanthemum morifolium"
     },
     {
-      "name": "(True) cinnamon",
+      "name": "cinnamon",
       "species": "Cinnamomum verum"
     },
     {
@@ -528,7 +528,7 @@
       "species": "Symplocarpus foetidus"
     },
     {
-      "name": "Hare's colwort",
+      "name": "Hares colwort",
       "species": "Sonchus oleraceus"
     },
     {
@@ -544,7 +544,7 @@
       "species": "Rudbeckia fulgida"
     },
     {
-      "name": "Green-headed Coneflower",
+      "name": "Green headed Coneflower",
       "species": "Rudbeckia laciniata"
     },
     {
@@ -1419,6 +1419,10 @@
       "name": "Carolina horse nettle",
       "species": "Solanum carolinense"
     },
+   {
+     "name": "Cauliflower",
+     "species": "Solanum carolinense"
+   },
     {
       "name": "Horse nettle",
       "species": "Solanum carolinense"
@@ -1811,6 +1815,10 @@
       "name": "Quercitron",
       "species": "Quercus velutina"
     },
+   {
+     "name": "Quinoa",
+     "species": "Quercus velutina"
+   },
     {
       "name": "Radical weed",
       "species": "Solanum carolinense"
@@ -2189,15 +2197,15 @@
       "species": "Platanus spp."
     },
     {
-      "name": "Sycamore (California)",
+      "name": "Sycamore",
       "species": "Platanus racemosa"
     },
     {
-      "name": "Sycamore (Arizona)",
+      "name": "Sycamore Arizona",
       "species": "Platanus wrighitii"
     },
     {
-      "name": "Sycamore (American)",
+      "name": "Sycamore American",
       "species": "Platanus occidentalis"
     },
     {
@@ -2229,11 +2237,11 @@
       "species": "Rudbeckia laciniata"
     },
     {
-      "name": "Thousand-leaf",
+      "name": "Thousand leaf",
       "species": "Achillea millefolium"
     },
     {
-      "name": "Thousand-seal",
+      "name": "Thousand seal",
       "species": "Achillea millefolium"
     },
     {
@@ -2317,11 +2325,11 @@
      "species": "Cirsium arvense"
    },
     {
-      "name": "Sharp-fringed sow Thistle",
+      "name": "Sharp fringed sow Thistle",
       "species": "Sonchus asper"
     },
     {
-      "name": "Small-flowered Thistle",
+      "name": "Small flowered Thistle",
       "species": "Cirsium arvense"
     },
     {
@@ -2329,7 +2337,7 @@
       "species": "Sonchus asper"
     },
     {
-      "name": "Spiny-leaved sow Thistle",
+      "name": "Spiny leaved sow Thistle",
       "species": "Sonchus asper"
     },
     {
@@ -2373,15 +2381,15 @@
       "species": "Cardamine concatenata"
     },
     {
-      "name": "Touch-me-not",
+      "name": "Touch me-not",
       "species": "Impatiens capensis, Impatiens pallida, Mimosa pudica, Cardamine hirsuta"
     },
     {
-      "name": "Traveller's joy",
+      "name": "Travellers joy",
       "species": "Clematis virginiana"
     },
     {
-      "name": "Tread-softly",
+      "name": "Tread softly",
       "species": "Solanum carolinense"
     },
     {
@@ -2445,11 +2453,11 @@
       "species": "Hesperis matronalis"
     },
     {
-      "name": "Dame's violet",
+      "name": "Dames violet",
       "species": "Hesperis matronalis"
     },
     {
-      "name": "Dog's-tooth-violet or dogtooth violet",
+      "name": "Dogtooth violet",
       "species": "Erythronium dens-canis"
     },
     {
@@ -2465,7 +2473,7 @@
       "species": "Clematis virginiana"
     },
     {
-      "name": "Walnut (California walnut)",
+      "name": "California walnut",
       "species": "Juglans californica"
     },
     {
@@ -2489,7 +2497,7 @@
       "species": "Plantago major"
     },
     {
-      "name": "White-root",
+      "name": "White root",
       "species": "Asclepias tuberosa"
     },
     {
